@@ -1,0 +1,144 @@
+https://chatgpt.com/s/t_6adb2d6e1e2c8191b572f40e311f18f6
+
+# 1. First, understand Jira's structure
+
+The most important distinction is that spaces, epics, backlogs, boards, and sprints are not all levels of the same hierarchy. They serve different purposes.
+
+## Space / Project
+
+QA Testing (VIC)
+
+The workspace where your work items live
+
+Contains work items
+
+### Epic
+
+A large feature or capability
+
+Groups related work
+
+### User story / Task / Bug
+
+Individual work items
+
+Optional breakdown
+
+### Subtask
+
+A smaller part of a parent task
+
+Separate from this hierarchy: the backlog organizes unplanned work, sprints group work for a time-boxed iteration, and boards visualize progress.
+
+In Jira's standard hierarchy, an epic can group stories, tasks, and bugs. Subtasks belong to a standard work item. A backlog or sprint does not become the parent of an epic; these are planning views and containers for scheduling work.
+
+## 2. What each term means — without confusion
+
+| Term            | What it actually is                                          | Example in your QA space                         |
+| --------------- | ------------------------------------------------------------ | ------------------------------------------------ |
+| Space / Project | The overall place where related work is managed              | QA Testing (VIC)                                 |
+| Epic            | A large feature or goal that groups related work             | User Access Management                           |
+| Story           | A piece of functionality described from a user's perspective | As a tester, I want to log in securely           |
+| Task            | A specific piece of work to complete                         | Implement login validation                       |
+| Bug             | A defect that needs investigation or fixing                  | Invalid passwords are accepted                   |
+| Subtask         | A smaller part of a parent work item                         | Write a test for invalid passwords               |
+| Product backlog | The ordered list of work waiting to be considered or planned | All upcoming stories, tasks, and bugs            |
+| Sprint          | A fixed-length iteration for completing selected work        | Sprint 1: login functionality                    |
+| Board           | A visual view of work organized by workflow status           | To Do → In Progress → In Review → Done           |
+| Workflow        | The statuses and transitions work items follow               | A bug moves from Open to In Progress to Resolved |
+| Timeline        | A roadmap-style view of work over time                       | Plan when major features should be delivered     |
+| Dashboard       | A configurable view of project information and reports       | Open bugs, assigned tasks, sprint progress       |
+
+One important distinction: the backlog is not the same thing as the board, and a sprint is not the same thing as an epic.
+
+## 3. Where do these things exist in your Jira interface?
+
+Let's connect the concepts to the tabs visible in your screenshot.
+
+Backlog
+
+Your current screen. This is where you'll organize work, create or view backlog items, rank them, and plan sprints. In a Scrum setup, the backlog commonly shows an epic panel or epic-related controls.
+
+Board
+
+Switch here to see work represented as cards in columns. Moving a card between columns generally changes its workflow status, depending on your configuration.
+
+Summary
+
+An overview of project activity and progress, with the exact information depending on the space and features available.
+
+Timeline
+
+A time-based view for planning and understanding work schedules. It's not where the work hierarchy itself is defined.
+
+Settings
+
+Accessible through the relevant settings menus. Depending on your permissions and project type, settings can control workflows, work types, permissions, and other configuration.
+
+## 4. How the backlog and sprint relate to each other
+
+Look at the two large sections in your screenshot.
+
+### SCRUM Sprint 1
+
+0 work items
+
+The sprint section at the top. Work you select for the sprint will appear here before the sprint starts.
+
+### Backlog
+
+0 work items
+
+The section below. This is where work can be added and organized before it is selected for a sprint.
+
+A typical Scrum cycle looks like this:
+
+1\. Create work items
+
+Stories, tasks, and bugs
+
+2\. Organize the backlog
+
+Prioritize, refine, estimate, and link to epics
+
+3\. Plan a sprint
+
+Select a realistic set of work items
+
+4\. Start and execute
+
+Track work on the board as statuses change
+
+5\. Complete and review
+
+Review results, unfinished work, and lessons learned
+
+You don't need to start the empty sprint yet. We'll create work first, then learn sprint planning when we reach that stage.
+
+## 5. One concept that will save you a lot of confusion: hierarchy vs. organization
+
+Imagine a story called “Login with valid credentials.”
+
+That story can simultaneously:
+
+- Belong to the QA Testing (VIC) space.
+- Be associated with the User Access Management epic.
+- Appear in the product backlog while it is awaiting planning.
+- Be assigned to Sprint 1 when the team commits to working on it.
+- Appear as a card on the board while its status is In Progress.
+
+These are different relationships and views of the same work item. The story doesn't get copied into five separate stories just because it appears in five places.
+
+## 6. What we're going to learn, in order
+
+1. Jira navigation: understand spaces, tabs, work items, menus, and settings.
+2. Work item fundamentals: create and inspect a task, understand fields, statuses, and issue keys.
+3. Epics and user stories: build a sensible hierarchy with acceptance criteria.
+4. Product backlog: order work, understand priority, estimates, and refinement.
+5. Board and workflows: understand columns, statuses, and transitions.
+6. Sprints: plan, start, track, complete, and review work.
+7. SDET workflows: report defects, track fixes, retest, and use useful reports and searches.
+
+Your next action: stay on the current Backlog screen. Don't create an epic yet. Click the Board tab, look at the columns and any available board controls, and then return to Backlog.
+
+We'll first understand how Jira represents and tracks work. Once that clicks, creating a quality product backlog will become much easier.
