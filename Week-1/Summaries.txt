@@ -1,0 +1,15 @@
+This comprehensive Jira course covers the end-to-end process of project management using Atlassian Jira. Here are the key timelines for the topics covered so far in the video:
+
+Introduction to Jira: The course begins with an overview of how to use the Jira tool, user stories, and sprint maintenance (0:12).
+Project Hierarchy & Concepts: Discussion on the product backlog, epics, features, user stories, and tasks (17:34).
+Creating & Managing Epics: Practical steps to create epics, define summaries/descriptions, and manage team assignments (1:00:40).
+AI Features in Jira: Using AI to improve descriptions and writing for epics and features (1:07:24).
+Product Backlog Management: Understanding the product backlog, prioritization techniques, and the Scrum Master's role (1:27:34).
+Prioritization Frameworks: An overview of frameworks like MoSCoW, RICE, and ICE to manage backlog priorities (1:51:10).
+Sprint Planning & Refinement: Defining sprint goals, user story grooming, capacity planning, and managing non-working days (3:00:03).
+Jira Reports: Introduction to Burn-down charts to track project progress (3:35:40).
+User & Team Management: Adding members to your project team and managing user roles (4:55:42).
+Kanban Projects: Overview of the Kanban board, project creation, and WIP (Work In Progress) limits (5:03:55).
+
+
+

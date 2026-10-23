@@ -1,0 +1,47 @@
+Week 1:  Testing Foundation and Core Java (19-26 October 2026) 
+Focus: The focus is to validate understanding of software testing fundamentals—including test 
+levels, design, and lifecycles—alongside the practical implementation of core Java concepts like 
+OOPs, collections, exception handling, and automation framework development. 
+
+Topics Covered: 
+SDLC  
+❖ Requirements Design  
+❖ Coding  
+❖ Testing  
+❖ Deployment  
+
+Fundamentals of Testing  
+❖ Quality Assurance  
+❖ System Integration Testing  
+❖ User Acceptance Testing  
+❖ Agile vs Waterfall 
+❖ Bug Tracking Tool (JIRA) usage  
+❖ Test Case Management (XRay) usage  
+❖ Confluence usage  
+
+Hands-on Practical Skills: 
+➢ Set up a development environment using Intellij IDE.  
+➢ Basic Java programming hands-on leveraging the concepts mentioned  
+ Practical Skills for Bug Tracking in Jira 
+ Project and Board Setup 
+ Writing Effective Bug Tickets 
+ Triage, Assignment, and Linking 
+ Advanced Searching and Filtering (JQL) 
+ Jira Query Language (JQL) 
+ Custom Views & Dashboards 
+➢ Understand test life cycle using XRay - create and execute tests  
+ Test Design (Creating Artifacts)  
+ Creating a Test Case 
+ Adding pre-conditions 
+ Establishing Traceability 
+ Test Organization 
+ The Test Repository (Hierarchical) 
+ Test Sets (Flat Lists) 
+ Test Execution 
+ Setting up a Test Plan 
+ Creating a Test Execution 
+ Running the Test 
+ Reporting & Dashboard Metrics 
+ Requirement Coverage 
+ Traceability Report  
+ Test Plan Metrics
