@@ -17,6 +17,10 @@ https://www.geeksforgeeks.org/software-engineering/agile-vs-waterfall/
 User Acceptance Testing 
 https://www.geeksforgeeks.org/software-testing/user-acceptance-testing-uat/
 
+Kanban
+https://www.geeksforgeeks.org/software-engineering/kanban-agile-methodology/
+
+
 Automation Testing
 
 
