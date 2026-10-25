@@ -1,0 +1,2023 @@
+
+C:\Users\bss\Desktop\E-Commerce Case study\KiloKart>java -cp out com.kilokart.app.KiloKartApplication
+====================================
+       Welcome to KiloKart
+   Core Java OOP Shopping Demo
+====================================
+
+1. Browse products
+2. Register as a customer
+3. Customer login
+4. Administrator login
+5. Set up first administrator
+0. Exit
+Choose an option: 2
+
+Customer registration
+Name: swamy
+Email: swamy@gmail.com
+Phone: 9101021321
+Create password (minimum 6 characters): 123456
+Street: Day Oak
+City: Gudem
+State: Assam
+Postal code: 210220
+Country: India
+Registration complete. You can now log in with swamy@gmail.com.
+
+1. Browse products
+2. Register as a customer
+3. Customer login
+4. Administrator login
+5. Set up first administrator
+0. Exit
+Choose an option: 5
+First-run administrator setup. Choose your own credentials.
+Name: bss
+Email: bss@gmail.com
+Phone: 9010112345
+Create password (minimum 6 characters): 123456
+Administrator account created. No password is displayed or stored as plain text.
+
+1. Browse products
+2. Register as a customer
+3. Customer login
+4. Administrator login
+5. Administrator setup is complete
+0. Exit
+Choose an option: 4
+Administrator email: bss@gmail.com
+Password: 123456
+Administrator access granted. Welcome, bss.
+
+Administrator menu
+1. View products
+2. Add product
+3. Update product
+4. Remove product
+5. Search customers
+6. Remove customer
+7. View/manage orders
+0. Log out
+Choose an option: 5
+Search customers: 1. Name  2. City  3. Phone  4. Email
+Choose a search type: 1
+Name contains: swamy
+ID a6afe5c8-6696-404c-bae2-690ff8d86929 | swamy | swamy@gmail.com | city Gudem
+
+Administrator menu
+1. View products
+2. Add product
+3. Update product
+4. Remove product
+5. Search customers
+6. Remove customer
+7. View/manage orders
+0. Log out
+Choose an option: 4
+Product ID to remove: -1
+No product found with that ID.
+
+Administrator menu
+1. View products
+2. Add product
+3. Update product
+4. Remove product
+5. Search customers
+6. Remove customer
+7. View/manage orders
+0. Log out
+Choose an option: 5
+Search customers: 1. Name  2. City  3. Phone  4. Email
+Choose a search type: 1
+Name contains: swamy
+ID a6afe5c8-6696-404c-bae2-690ff8d86929 | swamy | swamy@gmail.com | city Gudem
+
+Administrator menu
+1. View products
+2. Add product
+3. Update product
+4. Remove product
+5. Search customers
+6. Remove customer
+7. View/manage orders
+0. Log out
+Choose an option: 6
+Customer ID to remove: swamy@gmail.com
+No customer found with that ID.
+
+Administrator menu
+1. View products
+2. Add product
+3. Update product
+4. Remove product
+5. Search customers
+6. Remove customer
+7. View/manage orders
+0. Log out
+Choose an option: 5
+Search customers: 1. Name  2. City  3. Phone  4. Email
+Choose a search type: 1
+Name contains: swamy
+ID a6afe5c8-6696-404c-bae2-690ff8d86929 | swamy | swamy@gmail.com | city Gudem
+
+Administrator menu
+1. View products
+2. Add product
+3. Update product
+4. Remove product
+5. Search customers
+6. Remove customer
+7. View/manage orders
+0. Log out
+Choose an option: 6
+Customer ID to remove: 6afe5c8-6696-404c-bae2-690ff8d86929
+No customer found with that ID.
+
+Administrator menu
+1. View products
+2. Add product
+3. Update product
+4. Remove product
+5. Search customers
+6. Remove customer
+7. View/manage orders
+0. Log out
+Choose an option: 6
+Customer ID to remove: a6afe5c8-6696-40
+No customer found with that ID.
+
+Administrator menu
+1. View products
+2. Add product
+3. Update product
+4. Remove product
+5. Search customers
+6. Remove customer
+7. View/manage orders
+0. Log out
+Choose an option: 5
+Search customers: 1. Name  2. City  3. Phone  4. Email
+Choose a search type: 1
+Name contains: swamy
+ID a6afe5c8-6696-404c-bae2-690ff8d86929 | swamy | swamy@gmail.com | city Gudem
+
+Administrator menu
+1. View products
+2. Add product
+3. Update product
+4. Remove product
+5. Search customers
+6. Remove customer
+7. View/manage orders
+0. Log out
+Choose an option: 6
+Customer ID to remove: a6afe5c8-6696-404c-bae2-690ff8d86929
+Customer account removed.
+
+Administrator menu
+1. View products
+2. Add product
+3. Update product
+4. Remove product
+5. Search customers
+6. Remove customer
+7. View/manage orders
+0. Log out
+Choose an option: 0
+Administrator logged out.
+
+1. Browse products
+2. Register as a customer
+3. Customer login
+4. Administrator login
+5. Administrator setup is complete
+0. Exit
+Choose an option: 2
+
+Customer registration
+Name: akhil
+Email: akhi@g.com
+Phone: 123
+Create password (minimum 6 characters): 123456
+Street: lone
+City: Pole
+State: AP
+Postal code: 129012
+Country: Indi
+Registration complete. You can now log in with akhi@g.com.
+
+1. Browse products
+2. Register as a customer
+3. Customer login
+4. Administrator login
+5. Administrator setup is complete
+0. Exit
+Choose an option: 4
+Administrator email: bss@gmail.com
+Password: 123456
+Administrator access granted. Welcome, bss.
+
+Administrator menu
+1. View products
+2. Add product
+3. Update product
+4. Remove product
+5. Search customers
+6. Remove customer
+7. View/manage orders
+0. Log out
+Choose an option: 5
+Search customers: 1. Name  2. City  3. Phone  4. Email
+Choose a search type: akhil
+Enter a whole number.
+Choose a search type: 1
+Name contains: akhil
+ID 48fe0a51-5267-42e1-bd64-dc6158113c8c | akhil | akhi@g.com | city Pole
+
+Administrator menu
+1. View products
+2. Add product
+3. Update product
+4. Remove product
+5. Search customers
+6. Remove customer
+7. View/manage orders
+0. Log out
+Choose an option: 5
+Search customers: 1. Name  2. City  3. Phone  4. Email
+Choose a search type: 4
+Email: akhi@g.com
+ID 48fe0a51-5267-42e1-bd64-dc6158113c8c | akhil | akhi@g.com | city Pole
+
+Administrator menu
+1. View products
+2. Add product
+3. Update product
+4. Remove product
+5. Search customers
+6. Remove customer
+7. View/manage orders
+0. Log out
+Choose an option: 1
+P1001 | Basmati Rice | Premium long-grain rice | KiloKart Select | INR 120.00 | stock 30
+P1002 | Toor Dal | Split pigeon peas | Farm Fresh | INR 95.00 | stock 25
+P1003 | Olive Oil | Extra virgin cooking oil | Oliva | INR 450.00 | stock 12
+P1004 | Green Tea | Organic green tea bags | Leaf & Cup | INR 180.00 | stock 18
+
+Administrator menu
+1. View products
+2. Add product
+3. Update product
+4. Remove product
+5. Search customers
+6. Remove customer
+7. View/manage orders
+0. Log out
+Choose an option: 2
+Product ID: P1005
+Name: Brush
+Description: A flexible tooth brush
+Company: Colgate
+Price: 30
+Stock quantity: 124
+Product added.
+
+Administrator menu
+1. View products
+2. Add product
+3. Update product
+4. Remove product
+5. Search customers
+6. Remove customer
+7. View/manage orders
+0. Log out
+Choose an option: 3
+Product ID to update: P1005
+Current: Brush | A flexible tooth brush | Colgate | INR 30.00 | stock 124
+New name: ToothBrush
+New description: A normal brush
+New company: Colgate
+New price: 28
+New stock: 120
+Product updated.
+
+Administrator menu
+1. View products
+2. Add product
+3. Update product
+4. Remove product
+5. Search customers
+6. Remove customer
+7. View/manage orders
+0. Log out
+Choose an option: 2
+Product ID: P1006
+Name: Dal
+Description: Preprocessed dal as snack item.
+Company: Haldiram
+Price: 130
+Stock quantity: 49
+Product added.
+
+Administrator menu
+1. View products
+2. Add product
+3. Update product
+4. Remove product
+5. Search customers
+6. Remove customer
+7. View/manage orders
+0. Log out
+Choose an option: 1
+P1001 | Basmati Rice | Premium long-grain rice | KiloKart Select | INR 120.00 | stock 30
+P1002 | Toor Dal | Split pigeon peas | Farm Fresh | INR 95.00 | stock 25
+P1003 | Olive Oil | Extra virgin cooking oil | Oliva | INR 450.00 | stock 12
+P1004 | Green Tea | Organic green tea bags | Leaf & Cup | INR 180.00 | stock 18
+P1005 | ToothBrush | A normal brush | Colgate | INR 28.00 | stock 120
+P1006 | Dal | Preprocessed dal as snack item. | Haldiram | INR 130.00 | stock 49
+
+Administrator menu
+1. View products
+2. Add product
+3. Update product
+4. Remove product
+5. Search customers
+6. Remove customer
+7. View/manage orders
+0. Log out
+Choose an option: 0
+Administrator logged out.
+
+1. Browse products
+2. Register as a customer
+3. Customer login
+4. Administrator login
+5. Administrator setup is complete
+0. Exit
+Choose an option: 1
+
+Product search
+1. View all products
+2. Search by product ID
+3. Search by name
+4. Search by name and exact price
+5. Search by name and price range
+6. Search by name and company
+7. Search by name, company, and exact price
+0. Back
+Choose an option: 1
+P1001 | Basmati Rice | Premium long-grain rice | KiloKart Select | INR 120.00 | stock 30
+P1002 | Toor Dal | Split pigeon peas | Farm Fresh | INR 95.00 | stock 25
+P1003 | Olive Oil | Extra virgin cooking oil | Oliva | INR 450.00 | stock 12
+P1004 | Green Tea | Organic green tea bags | Leaf & Cup | INR 180.00 | stock 18
+P1005 | ToothBrush | A normal brush | Colgate | INR 28.00 | stock 120
+P1006 | Dal | Preprocessed dal as snack item. | Haldiram | INR 130.00 | stock 49
+
+Product search
+1. View all products
+2. Search by product ID
+3. Search by name
+4. Search by name and exact price
+5. Search by name and price range
+6. Search by name and company
+7. Search by name, company, and exact price
+0. Back
+Choose an option: 1
+P1001 | Basmati Rice | Premium long-grain rice | KiloKart Select | INR 120.00 | stock 30
+P1002 | Toor Dal | Split pigeon peas | Farm Fresh | INR 95.00 | stock 25
+P1003 | Olive Oil | Extra virgin cooking oil | Oliva | INR 450.00 | stock 12
+P1004 | Green Tea | Organic green tea bags | Leaf & Cup | INR 180.00 | stock 18
+P1005 | ToothBrush | A normal brush | Colgate | INR 28.00 | stock 120
+P1006 | Dal | Preprocessed dal as snack item. | Haldiram | INR 130.00 | stock 49
+
+Product search
+1. View all products
+2. Search by product ID
+3. Search by name
+4. Search by name and exact price
+5. Search by name and price range
+6. Search by name and company
+7. Search by name, company, and exact price
+0. Back
+Choose an option: P1006
+Enter a whole number.
+Choose an option: 2
+Product ID: P1006
+P1006 | Dal | Preprocessed dal as snack item. | Haldiram | INR 130.00 | stock 49
+
+Product search
+1. View all products
+2. Search by product ID
+3. Search by name
+4. Search by name and exact price
+5. Search by name and price range
+6. Search by name and company
+7. Search by name, company, and exact price
+0. Back
+Choose an option: 6
+Name contains: Dal
+Company contains: Haldiram
+P1006 | Dal | Preprocessed dal as snack item. | Haldiram | INR 130.00 | stock 49
+
+Product search
+1. View all products
+2. Search by product ID
+3. Search by name
+4. Search by name and exact price
+5. Search by name and price range
+6. Search by name and company
+7. Search by name, company, and exact price
+0. Back
+Choose an option: 4
+Name contains: dal
+Exact price: 130
+P1006 | Dal | Preprocessed dal as snack item. | Haldiram | INR 130.00 | stock 49
+
+Product search
+1. View all products
+2. Search by product ID
+3. Search by name
+4. Search by name and exact price
+5. Search by name and price range
+6. Search by name and company
+7. Search by name, company, and exact price
+0. Back
+Choose an option: 5
+Name contains: dal
+Minimum price: 10
+Maximum price: 150
+P1002 | Toor Dal | Split pigeon peas | Farm Fresh | INR 95.00 | stock 25
+P1006 | Dal | Preprocessed dal as snack item. | Haldiram | INR 130.00 | stock 49
+
+Product search
+1. View all products
+2. Search by product ID
+3. Search by name
+4. Search by name and exact price
+5. Search by name and price range
+6. Search by name and company
+7. Search by name, company, and exact price
+0. Back
+Choose an option: 1
+P1001 | Basmati Rice | Premium long-grain rice | KiloKart Select | INR 120.00 | stock 30
+P1002 | Toor Dal | Split pigeon peas | Farm Fresh | INR 95.00 | stock 25
+P1003 | Olive Oil | Extra virgin cooking oil | Oliva | INR 450.00 | stock 12
+P1004 | Green Tea | Organic green tea bags | Leaf & Cup | INR 180.00 | stock 18
+P1005 | ToothBrush | A normal brush | Colgate | INR 28.00 | stock 120
+P1006 | Dal | Preprocessed dal as snack item. | Haldiram | INR 130.00 | stock 49
+
+Product search
+1. View all products
+2. Search by product ID
+3. Search by name
+4. Search by name and exact price
+5. Search by name and price range
+6. Search by name and company
+7. Search by name, company, and exact price
+0. Back
+Choose an option: 0
+
+1. Browse products
+2. Register as a customer
+3. Customer login
+4. Administrator login
+5. Administrator setup is complete
+0. Exit
+Choose an option: 2
+
+Customer registration
+Name: surya
+Email: surya@g.com
+Phone: 123
+Create password (minimum 6 characters): 123456
+Street: Ion
+City: Negra
+State: PL
+Postal code: 901021
+Country: India
+Registration complete. You can now log in with surya@g.com.
+
+1. Browse products
+2. Register as a customer
+3. Customer login
+4. Administrator login
+5. Administrator setup is complete
+0. Exit
+Choose an option: 3
+Email: surya@g.com
+Password: 123456
+Welcome, surya.
+
+Customer menu - surya
+1. Browse/search products
+2. Manage shopping cart
+3. Checkout
+4. View my orders and tracking
+5. Update my profile
+6. Manage subscription
+0. Log out
+Choose an option: 1
+
+Product search
+1. View all products
+2. Search by product ID
+3. Search by name
+4. Search by name and exact price
+5. Search by name and price range
+6. Search by name and company
+7. Search by name, company, and exact price
+0. Back
+Choose an option: 1
+P1001 | Basmati Rice | Premium long-grain rice | KiloKart Select | INR 120.00 | stock 30
+P1002 | Toor Dal | Split pigeon peas | Farm Fresh | INR 95.00 | stock 25
+P1003 | Olive Oil | Extra virgin cooking oil | Oliva | INR 450.00 | stock 12
+P1004 | Green Tea | Organic green tea bags | Leaf & Cup | INR 180.00 | stock 18
+P1005 | ToothBrush | A normal brush | Colgate | INR 28.00 | stock 120
+P1006 | Dal | Preprocessed dal as snack item. | Haldiram | INR 130.00 | stock 49
+
+Product search
+1. View all products
+2. Search by product ID
+3. Search by name
+4. Search by name and exact price
+5. Search by name and price range
+6. Search by name and company
+7. Search by name, company, and exact price
+0. Back
+Choose an option: 0
+
+Customer menu - surya
+1. Browse/search products
+2. Manage shopping cart
+3. Checkout
+4. View my orders and tracking
+5. Update my profile
+6. Manage subscription
+0. Log out
+Choose an option: 2
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 2
+Product ID: P1005
+Quantity: 2
+Product added to cart.
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 2
+Product ID: P1006
+Quantity: 3
+Product added to cart.
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 1
+P1005 | ToothBrush | quantity 2 | subtotal INR 56.00
+P1006 | Dal | quantity 3 | subtotal INR 390.00
+Cart subtotal: INR 446.00
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 0
+
+Customer menu - surya
+1. Browse/search products
+2. Manage shopping cart
+3. Checkout
+4. View my orders and tracking
+5. Update my profile
+6. Manage subscription
+0. Log out
+Choose an option: 3
+Coupon code (press Enter to skip):
+
+Checkout summary
+Subtotal:     INR 446.00
+Shipping:     INR 50.00
+Discount:     -INR 0.00
+Final total:  INR 496.00
+Place this order? (y/n): n
+Checkout cancelled. Your cart and stock are unchanged.
+
+Customer menu - surya
+1. Browse/search products
+2. Manage shopping cart
+3. Checkout
+4. View my orders and tracking
+5. Update my profile
+6. Manage subscription
+0. Log out
+Choose an option: 0
+You have been logged out.
+
+1. Browse products
+2. Register as a customer
+3. Customer login
+4. Administrator login
+5. Administrator setup is complete
+0. Exit
+Choose an option: 1
+
+Product search
+1. View all products
+2. Search by product ID
+3. Search by name
+4. Search by name and exact price
+5. Search by name and price range
+6. Search by name and company
+7. Search by name, company, and exact price
+0. Back
+Choose an option: 0
+
+1. Browse products
+2. Register as a customer
+3. Customer login
+4. Administrator login
+5. Administrator setup is complete
+0. Exit
+Choose an option: 3
+Email: surya@g.com
+Password: 123456
+Welcome, surya.
+
+Customer menu - surya
+1. Browse/search products
+2. Manage shopping cart
+3. Checkout
+4. View my orders and tracking
+5. Update my profile
+6. Manage subscription
+0. Log out
+Choose an option: 2
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 3
+Product ID: P1006
+New quantity (0 removes it): 1
+Cart updated.
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 1
+P1005 | ToothBrush | quantity 2 | subtotal INR 56.00
+P1006 | Dal | quantity 1 | subtotal INR 130.00
+Cart subtotal: INR 186.00
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 2
+Product ID: P1002
+Quantity: 1
+Product added to cart.
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 1
+P1005 | ToothBrush | quantity 2 | subtotal INR 56.00
+P1006 | Dal | quantity 1 | subtotal INR 130.00
+P1002 | Toor Dal | quantity 1 | subtotal INR 95.00
+Cart subtotal: INR 281.00
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 4
+Product ID: P1002
+If it was in the cart, it has been removed.
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 1
+P1005 | ToothBrush | quantity 2 | subtotal INR 56.00
+P1006 | Dal | quantity 1 | subtotal INR 130.00
+Cart subtotal: INR 186.00
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 2
+Product ID: P1003
+Quantity: 4
+Product added to cart.
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 1
+P1005 | ToothBrush | quantity 2 | subtotal INR 56.00
+P1006 | Dal | quantity 1 | subtotal INR 130.00
+P1003 | Olive Oil | quantity 4 | subtotal INR 1800.00
+Cart subtotal: INR 1986.00
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 0
+
+Customer menu - surya
+1. Browse/search products
+2. Manage shopping cart
+3. Checkout
+4. View my orders and tracking
+5. Update my profile
+6. Manage subscription
+0. Log out
+Choose an option: 3
+Coupon code (press Enter to skip):
+
+Checkout summary
+Subtotal:     INR 1986.00
+Shipping:     INR 0.00
+Discount:     -INR 0.00
+Final total:  INR 1986.00
+Place this order? (y/n): y
+
+Choose simulated payment method
+1. UPI
+2. Debit card
+3. Credit card
+4. Cash on delivery
+5. Gift card (demo balance INR 500.00)
+0. Cancel checkout
+Choose an option: 1
+Order confirmed. Order ID: 6b00833d-e4dc-41b7-b6d2-00c130ece59d
+Payment method: UPI (simulated)
+
+Customer menu - surya
+1. Browse/search products
+2. Manage shopping cart
+3. Checkout
+4. View my orders and tracking
+5. Update my profile
+6. Manage subscription
+0. Log out
+Choose an option: 1
+
+Product search
+1. View all products
+2. Search by product ID
+3. Search by name
+4. Search by name and exact price
+5. Search by name and price range
+6. Search by name and company
+7. Search by name, company, and exact price
+0. Back
+Choose an option: 0
+
+Customer menu - surya
+1. Browse/search products
+2. Manage shopping cart
+3. Checkout
+4. View my orders and tracking
+5. Update my profile
+6. Manage subscription
+0. Log out
+Choose an option: 4
+
+Order 6b00833d-e4dc-41b7-b6d2-00c130ece59d | CONFIRMED | placed 2026-10-25T18:39:30.218287600Z
+Subtotal INR 1986.00 | shipping INR 0.00 | discount INR 0.00 | total INR 1986.00
+  ToothBrush x2
+  Dal x1
+  Olive Oil x4
+
+Customer menu - surya
+1. Browse/search products
+2. Manage shopping cart
+3. Checkout
+4. View my orders and tracking
+5. Update my profile
+6. Manage subscription
+0. Log out
+Choose an option: 0
+You have been logged out.
+
+1. Browse products
+2. Register as a customer
+3. Customer login
+4. Administrator login
+5. Administrator setup is complete
+0. Exit
+Choose an option: 4
+Administrator email: bss@gmail.com
+Password: 123456
+Administrator access granted. Welcome, bss.
+
+Administrator menu
+1. View products
+2. Add product
+3. Update product
+4. Remove product
+5. Search customers
+6. Remove customer
+7. View/manage orders
+0. Log out
+Choose an option: 7
+6b00833d-e4dc-41b7-b6d2-00c130ece59d | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | CONFIRMED | total INR 1986.00
+Update an order status? (y/n): y
+Order ID: 6b00833d-e4dc-41b7-b6d2-00c130ece59d
+Current status: CONFIRMED
+1. PLACED
+2. CONFIRMED
+3. DISPATCHED
+4. IN_TRANSIT
+5. DELIVERED
+6. RETURN_REQUESTED
+7. RETURNED
+8. CANCELLED
+New status: 4
+Tracking information (blank to leave unchanged): Been delivered to the city warehouse
+Could not complete that action: Cannot change order status from CONFIRMED to IN_TRANSIT
+
+Administrator menu
+1. View products
+2. Add product
+3. Update product
+4. Remove product
+5. Search customers
+6. Remove customer
+7. View/manage orders
+0. Log out
+Choose an option: 7
+6b00833d-e4dc-41b7-b6d2-00c130ece59d | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | CONFIRMED | total INR 1986.00
+Update an order status? (y/n): y
+Order ID: 6b00833d-e4dc-41b7-b6d2-00c130ece59d
+Current status: CONFIRMED
+1. PLACED
+2. CONFIRMED
+3. DISPATCHED
+4. IN_TRANSIT
+5. DELIVERED
+6. RETURN_REQUESTED
+7. RETURNED
+8. CANCELLED
+New status: 3
+Tracking information (blank to leave unchanged): Order's been dispatched...
+Order status updated to DISPATCHED.
+
+Administrator menu
+1. View products
+2. Add product
+3. Update product
+4. Remove product
+5. Search customers
+6. Remove customer
+7. View/manage orders
+0. Log out
+Choose an option: 0
+Administrator logged out.
+
+1. Browse products
+2. Register as a customer
+3. Customer login
+4. Administrator login
+5. Administrator setup is complete
+0. Exit
+Choose an option: 3
+Email: surya@g.com
+Password: 123456
+Welcome, surya.
+
+Customer menu - surya
+1. Browse/search products
+2. Manage shopping cart
+3. Checkout
+4. View my orders and tracking
+5. Update my profile
+6. Manage subscription
+0. Log out
+Choose an option: 2
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 4
+Product ID: P1002
+If it was in the cart, it has been removed.
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 4
+Product ID: P1005
+If it was in the cart, it has been removed.
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 4
+Product ID: P1006
+If it was in the cart, it has been removed.
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 1
+Your cart is empty.
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 0
+
+Customer menu - surya
+1. Browse/search products
+2. Manage shopping cart
+3. Checkout
+4. View my orders and tracking
+5. Update my profile
+6. Manage subscription
+0. Log out
+Choose an option: 1
+
+Product search
+1. View all products
+2. Search by product ID
+3. Search by name
+4. Search by name and exact price
+5. Search by name and price range
+6. Search by name and company
+7. Search by name, company, and exact price
+0. Back
+Choose an option: 1
+P1001 | Basmati Rice | Premium long-grain rice | KiloKart Select | INR 120.00 | stock 30
+P1002 | Toor Dal | Split pigeon peas | Farm Fresh | INR 95.00 | stock 25
+P1003 | Olive Oil | Extra virgin cooking oil | Oliva | INR 450.00 | stock 8
+P1004 | Green Tea | Organic green tea bags | Leaf & Cup | INR 180.00 | stock 18
+P1005 | ToothBrush | A normal brush | Colgate | INR 28.00 | stock 118
+P1006 | Dal | Preprocessed dal as snack item. | Haldiram | INR 130.00 | stock 48
+
+Product search
+1. View all products
+2. Search by product ID
+3. Search by name
+4. Search by name and exact price
+5. Search by name and price range
+6. Search by name and company
+7. Search by name, company, and exact price
+0. Back
+Choose an option: 0
+
+Customer menu - surya
+1. Browse/search products
+2. Manage shopping cart
+3. Checkout
+4. View my orders and tracking
+5. Update my profile
+6. Manage subscription
+0. Log out
+Choose an option: 2
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 2
+Product ID: P1003
+Quantity: 2
+Product added to cart.
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 2
+Product ID: P1004
+Quantity: 4
+Product added to cart.
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 1
+P1003 | Olive Oil | quantity 2 | subtotal INR 900.00
+P1004 | Green Tea | quantity 4 | subtotal INR 720.00
+Cart subtotal: INR 1620.00
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 0
+
+Customer menu - surya
+1. Browse/search products
+2. Manage shopping cart
+3. Checkout
+4. View my orders and tracking
+5. Update my profile
+6. Manage subscription
+0. Log out
+Choose an option: 3
+Coupon code (press Enter to skip): LOYAL10
+Could not complete that action: Coupon requires 3 previous qualifying orders
+
+Customer menu - surya
+1. Browse/search products
+2. Manage shopping cart
+3. Checkout
+4. View my orders and tracking
+5. Update my profile
+6. Manage subscription
+0. Log out
+Choose an option: 3
+Coupon code (press Enter to skip):
+
+Checkout summary
+Subtotal:     INR 1620.00
+Shipping:     INR 0.00
+Discount:     -INR 0.00
+Final total:  INR 1620.00
+Place this order? (y/n): y
+
+Choose simulated payment method
+1. UPI
+2. Debit card
+3. Credit card
+4. Cash on delivery
+5. Gift card (demo balance INR 500.00)
+0. Cancel checkout
+Choose an option: 2
+Order confirmed. Order ID: 6a811833-9895-4d7c-83e5-6804a91e5f0e
+Payment method: Debit card (simulated)
+
+Customer menu - surya
+1. Browse/search products
+2. Manage shopping cart
+3. Checkout
+4. View my orders and tracking
+5. Update my profile
+6. Manage subscription
+0. Log out
+Choose an option: 2
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 1
+Your cart is empty.
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 2
+Product ID: P1004
+Quantity: 4
+Product added to cart.
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: P1005
+Enter a whole number.
+Choose an option: 2
+Product ID: P1005
+Quantity: 4
+Product added to cart.
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 1
+P1004 | Green Tea | quantity 4 | subtotal INR 720.00
+P1005 | ToothBrush | quantity 4 | subtotal INR 112.00
+Cart subtotal: INR 832.00
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 2
+Product ID: P1001
+Quantity: 5
+Product added to cart.
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 1
+P1004 | Green Tea | quantity 4 | subtotal INR 720.00
+P1005 | ToothBrush | quantity 4 | subtotal INR 112.00
+P1001 | Basmati Rice | quantity 5 | subtotal INR 600.00
+Cart subtotal: INR 1432.00
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 0
+
+Customer menu - surya
+1. Browse/search products
+2. Manage shopping cart
+3. Checkout
+4. View my orders and tracking
+5. Update my profile
+6. Manage subscription
+0. Log out
+Choose an option: 3
+Coupon code (press Enter to skip):
+
+Checkout summary
+Subtotal:     INR 1432.00
+Shipping:     INR 0.00
+Discount:     -INR 0.00
+Final total:  INR 1432.00
+Place this order? (y/n): y
+
+Choose simulated payment method
+1. UPI
+2. Debit card
+3. Credit card
+4. Cash on delivery
+5. Gift card (demo balance INR 500.00)
+0. Cancel checkout
+Choose an option: 4
+Order confirmed. Order ID: 195220f1-a616-4ed8-b777-f07ca14f7752
+Payment method: Cash on delivery
+
+Customer menu - surya
+1. Browse/search products
+2. Manage shopping cart
+3. Checkout
+4. View my orders and tracking
+5. Update my profile
+6. Manage subscription
+0. Log out
+Choose an option: 2
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 2
+Product ID: P1001
+Quantity: 10
+Product added to cart.
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 0
+
+Customer menu - surya
+1. Browse/search products
+2. Manage shopping cart
+3. Checkout
+4. View my orders and tracking
+5. Update my profile
+6. Manage subscription
+0. Log out
+Choose an option: 3
+Coupon code (press Enter to skip):
+
+Checkout summary
+Subtotal:     INR 1200.00
+Shipping:     INR 0.00
+Discount:     -INR 0.00
+Final total:  INR 1200.00
+Place this order? (y/n): y
+
+Choose simulated payment method
+1. UPI
+2. Debit card
+3. Credit card
+4. Cash on delivery
+5. Gift card (demo balance INR 500.00)
+0. Cancel checkout
+Choose an option: 5
+Could not complete that action: Payment was declined or the gift-card balance was insufficient
+
+Customer menu - surya
+1. Browse/search products
+2. Manage shopping cart
+3. Checkout
+4. View my orders and tracking
+5. Update my profile
+6. Manage subscription
+0. Log out
+Choose an option: 3
+Coupon code (press Enter to skip):
+
+Checkout summary
+Subtotal:     INR 1200.00
+Shipping:     INR 0.00
+Discount:     -INR 0.00
+Final total:  INR 1200.00
+Place this order? (y/n): y
+
+Choose simulated payment method
+1. UPI
+2. Debit card
+3. Credit card
+4. Cash on delivery
+5. Gift card (demo balance INR 500.00)
+0. Cancel checkout
+Choose an option: 3
+Order confirmed. Order ID: 002486a1-5e9c-413d-a906-69e07597e70b
+Payment method: Credit card (simulated)
+
+Customer menu - surya
+1. Browse/search products
+2. Manage shopping cart
+3. Checkout
+4. View my orders and tracking
+5. Update my profile
+6. Manage subscription
+0. Log out
+Choose an option: 4
+
+Order 6b00833d-e4dc-41b7-b6d2-00c130ece59d | DISPATCHED | placed 2026-10-25T18:39:30.218287600Z
+Subtotal INR 1986.00 | shipping INR 0.00 | discount INR 0.00 | total INR 1986.00
+Tracking: Order's been dispatched...
+  ToothBrush x2
+  Dal x1
+  Olive Oil x4
+
+Order 6a811833-9895-4d7c-83e5-6804a91e5f0e | CONFIRMED | placed 2026-10-25T18:49:26.343126900Z
+Subtotal INR 1620.00 | shipping INR 0.00 | discount INR 0.00 | total INR 1620.00
+  Olive Oil x2
+  Green Tea x4
+
+Order 195220f1-a616-4ed8-b777-f07ca14f7752 | CONFIRMED | placed 2026-10-25T18:51:07.483909200Z
+Subtotal INR 1432.00 | shipping INR 0.00 | discount INR 0.00 | total INR 1432.00
+  Green Tea x4
+  ToothBrush x4
+  Basmati Rice x5
+
+Order 002486a1-5e9c-413d-a906-69e07597e70b | CONFIRMED | placed 2026-10-25T18:52:48.756669800Z
+Subtotal INR 1200.00 | shipping INR 0.00 | discount INR 0.00 | total INR 1200.00
+  Basmati Rice x10
+
+Customer menu - surya
+1. Browse/search products
+2. Manage shopping cart
+3. Checkout
+4. View my orders and tracking
+5. Update my profile
+6. Manage subscription
+0. Log out
+Choose an option: 0
+You have been logged out.
+
+1. Browse products
+2. Register as a customer
+3. Customer login
+4. Administrator login
+5. Administrator setup is complete
+0. Exit
+Choose an option: 4
+Administrator email: bss@gmail.com
+Password: 123456
+Administrator access granted. Welcome, bss.
+
+Administrator menu
+1. View products
+2. Add product
+3. Update product
+4. Remove product
+5. Search customers
+6. Remove customer
+7. View/manage orders
+0. Log out
+Choose an option: 7
+6b00833d-e4dc-41b7-b6d2-00c130ece59d | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | DISPATCHED | total INR 1986.00
+6a811833-9895-4d7c-83e5-6804a91e5f0e | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | CONFIRMED | total INR 1620.00
+195220f1-a616-4ed8-b777-f07ca14f7752 | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | CONFIRMED | total INR 1432.00
+002486a1-5e9c-413d-a906-69e07597e70b | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | CONFIRMED | total INR 1200.00
+Update an order status? (y/n): y
+Order ID: 6b00833d-e4dc-41b7-b6d2-00c130ece59d
+Current status: DISPATCHED
+1. PLACED
+2. CONFIRMED
+3. DISPATCHED
+4. IN_TRANSIT
+5. DELIVERED
+6. RETURN_REQUESTED
+7. RETURNED
+8. CANCELLED
+New status: 4
+Tracking information (blank to leave unchanged):
+Order status updated to IN_TRANSIT.
+
+Administrator menu
+1. View products
+2. Add product
+3. Update product
+4. Remove product
+5. Search customers
+6. Remove customer
+7. View/manage orders
+0. Log out
+Choose an option: 7
+6b00833d-e4dc-41b7-b6d2-00c130ece59d | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | IN_TRANSIT | total INR 1986.00
+6a811833-9895-4d7c-83e5-6804a91e5f0e | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | CONFIRMED | total INR 1620.00
+195220f1-a616-4ed8-b777-f07ca14f7752 | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | CONFIRMED | total INR 1432.00
+002486a1-5e9c-413d-a906-69e07597e70b | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | CONFIRMED | total INR 1200.00
+Update an order status? (y/n): y
+Order ID: 6b00833d-e4dc-41b7-b6d2-00c130ece59d
+Current status: IN_TRANSIT
+1. PLACED
+2. CONFIRMED
+3. DISPATCHED
+4. IN_TRANSIT
+5. DELIVERED
+6. RETURN_REQUESTED
+7. RETURNED
+8. CANCELLED
+New status: 5
+Order status updated to DELIVERED.
+
+Administrator menu
+1. View products
+2. Add product
+3. Update product
+4. Remove product
+5. Search customers
+6. Remove customer
+7. View/manage orders
+0. Log out
+Choose an option: 0
+Administrator logged out.
+
+1. Browse products
+2. Register as a customer
+3. Customer login
+4. Administrator login
+5. Administrator setup is complete
+0. Exit
+Choose an option: 3
+Email: surya@gmail.com
+Password: 123456
+Could not complete that action: Invalid email or password
+
+1. Browse products
+2. Register as a customer
+3. Customer login
+4. Administrator login
+5. Administrator setup is complete
+0. Exit
+Choose an option: 3
+Email: surya@g.com
+Password: 123456
+Welcome, surya.
+
+Customer menu - surya
+1. Browse/search products
+2. Manage shopping cart
+3. Checkout
+4. View my orders and tracking
+5. Update my profile
+6. Manage subscription
+0. Log out
+Choose an option: 4
+
+Order 6b00833d-e4dc-41b7-b6d2-00c130ece59d | DELIVERED | placed 2026-10-25T18:39:30.218287600Z
+Subtotal INR 1986.00 | shipping INR 0.00 | discount INR 0.00 | total INR 1986.00
+Tracking: Order's been dispatched...
+  ToothBrush x2
+  Dal x1
+  Olive Oil x4
+
+Order 6a811833-9895-4d7c-83e5-6804a91e5f0e | CONFIRMED | placed 2026-10-25T18:49:26.343126900Z
+Subtotal INR 1620.00 | shipping INR 0.00 | discount INR 0.00 | total INR 1620.00
+  Olive Oil x2
+  Green Tea x4
+
+Order 195220f1-a616-4ed8-b777-f07ca14f7752 | CONFIRMED | placed 2026-10-25T18:51:07.483909200Z
+Subtotal INR 1432.00 | shipping INR 0.00 | discount INR 0.00 | total INR 1432.00
+  Green Tea x4
+  ToothBrush x4
+  Basmati Rice x5
+
+Order 002486a1-5e9c-413d-a906-69e07597e70b | CONFIRMED | placed 2026-10-25T18:52:48.756669800Z
+Subtotal INR 1200.00 | shipping INR 0.00 | discount INR 0.00 | total INR 1200.00
+  Basmati Rice x10
+
+Customer menu - surya
+1. Browse/search products
+2. Manage shopping cart
+3. Checkout
+4. View my orders and tracking
+5. Update my profile
+6. Manage subscription
+0. Log out
+Choose an option: 0
+You have been logged out.
+
+1. Browse products
+2. Register as a customer
+3. Customer login
+4. Administrator login
+5. Administrator setup is complete
+0. Exit
+Choose an option: 4
+Administrator email: bss@gmail.com
+Password: 123456
+Administrator access granted. Welcome, bss.
+
+Administrator menu
+1. View products
+2. Add product
+3. Update product
+4. Remove product
+5. Search customers
+6. Remove customer
+7. View/manage orders
+0. Log out
+Choose an option: 7
+6b00833d-e4dc-41b7-b6d2-00c130ece59d | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | DELIVERED | total INR 1986.00
+6a811833-9895-4d7c-83e5-6804a91e5f0e | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | CONFIRMED | total INR 1620.00
+195220f1-a616-4ed8-b777-f07ca14f7752 | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | CONFIRMED | total INR 1432.00
+002486a1-5e9c-413d-a906-69e07597e70b | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | CONFIRMED | total INR 1200.00
+Update an order status? (y/n): y
+Order ID: 6a811833-9895-4d7c-83e5-6804a91e5f0e
+Current status: CONFIRMED
+1. PLACED
+2. CONFIRMED
+3. DISPATCHED
+4. IN_TRANSIT
+5. DELIVERED
+6. RETURN_REQUESTED
+7. RETURNED
+8. CANCELLED
+New status: 3
+Tracking information (blank to leave unchanged):
+Order status updated to DISPATCHED.
+
+Administrator menu
+1. View products
+2. Add product
+3. Update product
+4. Remove product
+5. Search customers
+6. Remove customer
+7. View/manage orders
+0. Log out
+Choose an option: 0
+Administrator logged out.
+
+1. Browse products
+2. Register as a customer
+3. Customer login
+4. Administrator login
+5. Administrator setup is complete
+0. Exit
+Choose an option: surya@g.com
+Enter a whole number.
+Choose an option: 3
+Email: surya@g.com
+Password: 123456
+Welcome, surya.
+
+Customer menu - surya
+1. Browse/search products
+2. Manage shopping cart
+3. Checkout
+4. View my orders and tracking
+5. Update my profile
+6. Manage subscription
+0. Log out
+Choose an option: 6
+1. Monthly
+2. Quarterly
+3. Half-yearly
+4. Yearly
+0. Back
+Choose a subscription duration: 3
+Activate the HALF_YEARLY subscription? This is a local demo with no charge (y/n): y
+Subscription active until 2027-04-26. You now receive free shipping.
+
+Customer menu - surya
+1. Browse/search products
+2. Manage shopping cart
+3. Checkout
+4. View my orders and tracking
+5. Update my profile
+6. Manage subscription
+0. Log out
+Choose an option: 2
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 1
+Your cart is empty.
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 2
+Product ID: P1006
+Quantity: 5
+Product added to cart.
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 2
+Product ID: P1002
+Quantity: 6
+Product added to cart.
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 0
+
+Customer menu - surya
+1. Browse/search products
+2. Manage shopping cart
+3. Checkout
+4. View my orders and tracking
+5. Update my profile
+6. Manage subscription
+0. Log out
+Choose an option: 3
+Coupon code (press Enter to skip):
+
+Checkout summary
+Subtotal:     INR 1220.00
+Shipping:     INR 0.00
+Discount:     -INR 0.00
+Final total:  INR 1220.00
+Place this order? (y/n): y
+
+Choose simulated payment method
+1. UPI
+2. Debit card
+3. Credit card
+4. Cash on delivery
+5. Gift card (demo balance INR 500.00)
+0. Cancel checkout
+Choose an option: 1
+Order confirmed. Order ID: 485df92e-872a-4ce9-8638-53276f754e8e
+Payment method: UPI (simulated)
+
+Customer menu - surya
+1. Browse/search products
+2. Manage shopping cart
+3. Checkout
+4. View my orders and tracking
+5. Update my profile
+6. Manage subscription
+0. Log out
+Choose an option: 2
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 2
+Product ID: P1001
+Quantity: 1
+Product added to cart.
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 2
+Product ID: P1004
+Quantity: 4
+Product added to cart.
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 0
+
+Customer menu - surya
+1. Browse/search products
+2. Manage shopping cart
+3. Checkout
+4. View my orders and tracking
+5. Update my profile
+6. Manage subscription
+0. Log out
+Choose an option: 3
+Coupon code (press Enter to skip): LOYAL10
+Could not complete that action: Coupon requires 3 previous qualifying orders
+
+Customer menu - surya
+1. Browse/search products
+2. Manage shopping cart
+3. Checkout
+4. View my orders and tracking
+5. Update my profile
+6. Manage subscription
+0. Log out
+Choose an option: 0
+You have been logged out.
+
+1. Browse products
+2. Register as a customer
+3. Customer login
+4. Administrator login
+5. Administrator setup is complete
+0. Exit
+Choose an option: 4
+Administrator email: bss@gmail.com
+Password: 123456
+Administrator access granted. Welcome, bss.
+
+Administrator menu
+1. View products
+2. Add product
+3. Update product
+4. Remove product
+5. Search customers
+6. Remove customer
+7. View/manage orders
+0. Log out
+Choose an option: 7
+6b00833d-e4dc-41b7-b6d2-00c130ece59d | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | DELIVERED | total INR 1986.00
+6a811833-9895-4d7c-83e5-6804a91e5f0e | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | DISPATCHED | total INR 1620.00
+195220f1-a616-4ed8-b777-f07ca14f7752 | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | CONFIRMED | total INR 1432.00
+002486a1-5e9c-413d-a906-69e07597e70b | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | CONFIRMED | total INR 1200.00
+485df92e-872a-4ce9-8638-53276f754e8e | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | CONFIRMED | total INR 1220.00
+Update an order status? (y/n): y
+Order ID: 6a811833-9895-4d7c-83e5-6804a91e5f0e
+Current status: DISPATCHED
+1. PLACED
+2. CONFIRMED
+3. DISPATCHED
+4. IN_TRANSIT
+5. DELIVERED
+6. RETURN_REQUESTED
+7. RETURNED
+8. CANCELLED
+New status: 5
+Could not complete that action: Cannot change order status from DISPATCHED to DELIVERED
+
+Administrator menu
+1. View products
+2. Add product
+3. Update product
+4. Remove product
+5. Search customers
+6. Remove customer
+7. View/manage orders
+0. Log out
+Choose an option: 7
+6b00833d-e4dc-41b7-b6d2-00c130ece59d | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | DELIVERED | total INR 1986.00
+6a811833-9895-4d7c-83e5-6804a91e5f0e | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | DISPATCHED | total INR 1620.00
+195220f1-a616-4ed8-b777-f07ca14f7752 | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | CONFIRMED | total INR 1432.00
+002486a1-5e9c-413d-a906-69e07597e70b | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | CONFIRMED | total INR 1200.00
+485df92e-872a-4ce9-8638-53276f754e8e | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | CONFIRMED | total INR 1220.00
+Update an order status? (y/n): y
+Order ID: 6a811833-9895-4d7c-83e5-6804a91e5f0e
+Current status: DISPATCHED
+1. PLACED
+2. CONFIRMED
+3. DISPATCHED
+4. IN_TRANSIT
+5. DELIVERED
+6. RETURN_REQUESTED
+7. RETURNED
+8. CANCELLED
+New status: 4
+Tracking information (blank to leave unchanged):
+Order status updated to IN_TRANSIT.
+
+Administrator menu
+1. View products
+2. Add product
+3. Update product
+4. Remove product
+5. Search customers
+6. Remove customer
+7. View/manage orders
+0. Log out
+Choose an option: 7
+6b00833d-e4dc-41b7-b6d2-00c130ece59d | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | DELIVERED | total INR 1986.00
+6a811833-9895-4d7c-83e5-6804a91e5f0e | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | IN_TRANSIT | total INR 1620.00
+195220f1-a616-4ed8-b777-f07ca14f7752 | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | CONFIRMED | total INR 1432.00
+002486a1-5e9c-413d-a906-69e07597e70b | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | CONFIRMED | total INR 1200.00
+485df92e-872a-4ce9-8638-53276f754e8e | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | CONFIRMED | total INR 1220.00
+Update an order status? (y/n): y
+Order ID: 6a811833-9895-4d7c-83e5-6804a91e5f0e
+Current status: IN_TRANSIT
+1. PLACED
+2. CONFIRMED
+3. DISPATCHED
+4. IN_TRANSIT
+5. DELIVERED
+6. RETURN_REQUESTED
+7. RETURNED
+8. CANCELLED
+New status: 5
+Order status updated to DELIVERED.
+
+Administrator menu
+1. View products
+2. Add product
+3. Update product
+4. Remove product
+5. Search customers
+6. Remove customer
+7. View/manage orders
+0. Log out
+Choose an option: 7
+6b00833d-e4dc-41b7-b6d2-00c130ece59d | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | DELIVERED | total INR 1986.00
+6a811833-9895-4d7c-83e5-6804a91e5f0e | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | DELIVERED | total INR 1620.00
+195220f1-a616-4ed8-b777-f07ca14f7752 | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | CONFIRMED | total INR 1432.00
+002486a1-5e9c-413d-a906-69e07597e70b | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | CONFIRMED | total INR 1200.00
+485df92e-872a-4ce9-8638-53276f754e8e | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | CONFIRMED | total INR 1220.00
+Update an order status? (y/n): y
+Order ID: 195220f1-a616-4ed8-b777-f07ca14f7752
+Current status: CONFIRMED
+1. PLACED
+2. CONFIRMED
+3. DISPATCHED
+4. IN_TRANSIT
+5. DELIVERED
+6. RETURN_REQUESTED
+7. RETURNED
+8. CANCELLED
+New status: 3
+Tracking information (blank to leave unchanged):
+Order status updated to DISPATCHED.
+
+Administrator menu
+1. View products
+2. Add product
+3. Update product
+4. Remove product
+5. Search customers
+6. Remove customer
+7. View/manage orders
+0. Log out
+Choose an option: 7
+6b00833d-e4dc-41b7-b6d2-00c130ece59d | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | DELIVERED | total INR 1986.00
+6a811833-9895-4d7c-83e5-6804a91e5f0e | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | DELIVERED | total INR 1620.00
+195220f1-a616-4ed8-b777-f07ca14f7752 | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | DISPATCHED | total INR 1432.00
+002486a1-5e9c-413d-a906-69e07597e70b | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | CONFIRMED | total INR 1200.00
+485df92e-872a-4ce9-8638-53276f754e8e | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | CONFIRMED | total INR 1220.00
+Update an order status? (y/n): y
+Order ID: 195220f1-a616-4ed8-b777-f07ca14f7752
+Current status: DISPATCHED
+1. PLACED
+2. CONFIRMED
+3. DISPATCHED
+4. IN_TRANSIT
+5. DELIVERED
+6. RETURN_REQUESTED
+7. RETURNED
+8. CANCELLED
+New status: 4
+Tracking information (blank to leave unchanged):
+Order status updated to IN_TRANSIT.
+
+Administrator menu
+1. View products
+2. Add product
+3. Update product
+4. Remove product
+5. Search customers
+6. Remove customer
+7. View/manage orders
+0. Log out
+Choose an option: 7
+6b00833d-e4dc-41b7-b6d2-00c130ece59d | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | DELIVERED | total INR 1986.00
+6a811833-9895-4d7c-83e5-6804a91e5f0e | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | DELIVERED | total INR 1620.00
+195220f1-a616-4ed8-b777-f07ca14f7752 | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | IN_TRANSIT | total INR 1432.00
+002486a1-5e9c-413d-a906-69e07597e70b | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | CONFIRMED | total INR 1200.00
+485df92e-872a-4ce9-8638-53276f754e8e | customer 0b11896b-2f1c-4f65-9d0f-cf302b96a4f9 | CONFIRMED | total INR 1220.00
+Update an order status? (y/n): y
+Order ID: 195220f1-a616-4ed8-b777-f07ca14f7752
+Current status: IN_TRANSIT
+1. PLACED
+2. CONFIRMED
+3. DISPATCHED
+4. IN_TRANSIT
+5. DELIVERED
+6. RETURN_REQUESTED
+7. RETURNED
+8. CANCELLED
+New status: 5
+Order status updated to DELIVERED.
+
+Administrator menu
+1. View products
+2. Add product
+3. Update product
+4. Remove product
+5. Search customers
+6. Remove customer
+7. View/manage orders
+0. Log out
+Choose an option: 0
+Administrator logged out.
+
+1. Browse products
+2. Register as a customer
+3. Customer login
+4. Administrator login
+5. Administrator setup is complete
+0. Exit
+Choose an option: 3
+Email: surya@g.com
+Password: 123456
+Welcome, surya.
+
+Customer menu - surya
+1. Browse/search products
+2. Manage shopping cart
+3. Checkout
+4. View my orders and tracking
+5. Update my profile
+6. Manage subscription
+0. Log out
+Choose an option: 4
+
+Order 6b00833d-e4dc-41b7-b6d2-00c130ece59d | DELIVERED | placed 2026-10-25T18:39:30.218287600Z
+Subtotal INR 1986.00 | shipping INR 0.00 | discount INR 0.00 | total INR 1986.00
+Tracking: Order's been dispatched...
+  ToothBrush x2
+  Dal x1
+  Olive Oil x4
+
+Order 6a811833-9895-4d7c-83e5-6804a91e5f0e | DELIVERED | placed 2026-10-25T18:49:26.343126900Z
+Subtotal INR 1620.00 | shipping INR 0.00 | discount INR 0.00 | total INR 1620.00
+  Olive Oil x2
+  Green Tea x4
+
+Order 195220f1-a616-4ed8-b777-f07ca14f7752 | DELIVERED | placed 2026-10-25T18:51:07.483909200Z
+Subtotal INR 1432.00 | shipping INR 0.00 | discount INR 0.00 | total INR 1432.00
+  Green Tea x4
+  ToothBrush x4
+  Basmati Rice x5
+
+Order 002486a1-5e9c-413d-a906-69e07597e70b | CONFIRMED | placed 2026-10-25T18:52:48.756669800Z
+Subtotal INR 1200.00 | shipping INR 0.00 | discount INR 0.00 | total INR 1200.00
+  Basmati Rice x10
+
+Order 485df92e-872a-4ce9-8638-53276f754e8e | CONFIRMED | placed 2026-10-25T19:07:51.836793700Z
+Subtotal INR 1220.00 | shipping INR 0.00 | discount INR 0.00 | total INR 1220.00
+  Dal x5
+  Toor Dal x6
+
+Customer menu - surya
+1. Browse/search products
+2. Manage shopping cart
+3. Checkout
+4. View my orders and tracking
+5. Update my profile
+6. Manage subscription
+0. Log out
+Choose an option: 2
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 1
+P1001 | Basmati Rice | quantity 1 | subtotal INR 120.00
+P1004 | Green Tea | quantity 4 | subtotal INR 720.00
+Cart subtotal: INR 840.00
+
+Shopping cart
+1. View cart
+2. Add product
+3. Change quantity (0 removes item)
+4. Remove product
+0. Back
+Choose an option: 0
+
+Customer menu - surya
+1. Browse/search products
+2. Manage shopping cart
+3. Checkout
+4. View my orders and tracking
+5. Update my profile
+6. Manage subscription
+0. Log out
+Choose an option: 3
+Coupon code (press Enter to skip): LOYAL10
+
+Checkout summary
+Subtotal:     INR 840.00
+Shipping:     INR 0.00
+Discount:     -INR 84.00
+Final total:  INR 756.00
+Place this order? (y/n):
