@@ -1,11 +1,12 @@
 package com.kilokart.model;
 
+import java.security.MessageDigest;
 import java.security.SecureRandom;
-import java.util.Objects;
 import java.util.Locale;
+import java.util.Objects;
+
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.PBEKeySpec;
-import java.security.MessageDigest;
 
 public abstract class User {
     private static final SecureRandom RANDOM = new SecureRandom();

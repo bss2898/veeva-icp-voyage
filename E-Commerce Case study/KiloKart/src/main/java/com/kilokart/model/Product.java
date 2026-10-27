@@ -14,7 +14,7 @@ public class Product {
     public Product(String id, String name, String description, BigDecimal price, int stockQuantity) {
         this(id, name, description, "Unbranded", price, stockQuantity);
     }
-
+    //if not provided brand then it takes the default value as "Unbranded" and use other constructor to initialize the product object with the provided values.
     public Product(String id, String name, String description, String companyName,
                    BigDecimal price, int stockQuantity) {
         this.id = requireText(id, "id");
