@@ -1,0 +1,1056 @@
+
+Module	Test cases
+A — Account Management	10
+B — Product Catalogue	8
+C — Cart and Checkout	17
+Total			35
+
+
+| Category | Created |
+| -------- | ------- | 
+| Positive | 17      |                  
+| Negative | 13      |                  
+| Boundary | 5       |
+| Total    | 35      |       
+
+# Module A — User Account Management
+
+Use `Manual` as the Test Type for all 10 cases.
+
+## TC-01: Successful User Registration
+
+Summary\
+`Successful User Registration`
+
+Description — copy and paste
+
+Requirement: REQ-A1
+
+Precondition:\
+User is on the registration page.
+
+Test Steps:
+
+1. Enter full name: Bala Surya.
+2. Enter a unique valid email address.
+3. Enter password: Test\@123.
+4. Submit the registration form.
+
+Expected Result:\
+User account should be created successfully.
+
+Separate Jira fields:
+
+- Labels: `positive`
+- Priority: High
+- Test Type: Manual
+- Parent: Leave empty
+- Link to Story: User Registration
+
+## TC-02: Registration with Invalid Password
+
+Summary: `Registration with Invalid Password`
+
+Description
+
+Requirement: REQ-A1
+
+Precondition:\
+User is on the registration page.
+
+Test Steps:
+
+1. Enter a valid name and unique email.
+2. Enter password: abc12345.
+3. Submit the form.
+
+Expected Result:\
+Registration should be rejected because the password has no special character.
+
+Separate Jira fields:
+
+- Labels: `negative`
+- Priority: High
+- Test Type: Manual
+- Parent: Leave empty
+- Link to Story: User Registration
+
+## TC-03: Registration with Duplicate Email
+
+Summary: `Registration with Duplicate Email`
+
+Description
+
+Requirement: REQ-A1
+
+Precondition:\
+An account already exists with the email being tested.
+
+Test Steps:
+
+1. Enter valid registration details.
+2. Enter the already registered email.
+3. Submit the form.
+
+Expected Result:\
+Duplicate email should not be accepted.
+
+Separate Jira fields:
+
+- Labels: `negative`
+- Priority: Medium
+- Test Type: Manual
+- Parent: Leave empty
+- Link to Story: User Registration
+
+## TC-04: Successful Login
+
+Summary: `Successful Login`
+
+Description
+
+Requirement: REQ-A2
+
+Precondition:\
+User has a registered account.
+
+Test Steps:
+
+1. Enter registered email.
+2. Enter correct password.
+3. Click Login.
+
+Expected Result:\
+User should be redirected to the home page.
+
+Separate Jira fields:
+
+- Labels: `positive`
+- Priority: High
+- Test Type: Manual
+- Parent: Leave empty
+- Link to Story: User Login
+
+## TC-05: Login with Invalid Credentials
+
+Summary: `Login with Invalid Credentials`
+
+Description
+
+Requirement: REQ-A2
+
+Precondition:\
+Login page is available.
+
+Test Steps:
+
+1. Enter an invalid email or password.
+2. Click Login.
+
+Expected Result:\
+Display "Invalid email or password".
+
+Separate Jira fields:
+
+- Labels: `negative`
+- Priority: High
+- Test Type: Manual
+- Parent: Leave empty
+- Link to Story: User Login
+
+## TC-06: Account Lock after Five Failed Attempts
+
+Summary: `Account Lock after Five Failed Attempts`
+
+Description
+
+Requirement: REQ-A3
+
+Precondition:\
+User has a registered account.
+
+Test Steps:
+
+1. Enter an incorrect password four times.
+2. Enter an incorrect password for the fifth time.
+
+Expected Result:\
+Account should be locked for 15 minutes.
+
+Separate Jira fields:
+
+- Labels: `boundary`
+- Priority: High
+- Test Type: Manual
+- Parent: Leave empty
+- Link to Story: Account Locking
+
+## TC-07: Account Unlock after 15 Minutes
+
+Summary: `Account Unlock after 15 Minutes`
+
+Description
+
+Requirement: REQ-A3
+
+Precondition:\
+Account has been locked after five failed attempts.
+
+Test Steps:
+
+1. Attempt login during the lock period.
+2. Wait until 15 minutes have elapsed.
+3. Attempt login using valid credentials.
+
+Expected Result:\
+Login should be restricted during the lock period and allowed after the 15-minute period expires.
+
+Separate Jira fields:
+
+- Labels: `positive`
+- Priority: High
+- Test Type: Manual
+- Parent: Leave empty
+- Link to Story: Account Locking
+
+## TC-08: Password Reset Link Expiration
+
+Summary: `Password Reset Link Expiration`
+
+Description
+
+Requirement: REQ-A4
+
+Precondition:\
+User has requested a password reset and received the link.
+
+Test Steps:
+
+1. Open the reset link before 30 minutes have elapsed.
+2. Generate another reset link and wait until it has passed 30 minutes.
+3. Attempt to use the expired link.
+
+Expected Result:\
+The link should be valid within 30 minutes and invalid after expiration.
+
+Separate Jira fields:
+
+- Labels: `boundary`
+- Priority: High
+- Test Type: Manual
+- Parent: Leave empty
+- Link to Story: Password Reset
+
+## TC-09: Password Reset Link Can Be Used Only Once
+
+Summary: `Password Reset Link Can Be Used Only Once`
+
+Description
+
+Requirement: REQ-A4
+
+Precondition:\
+User has received a valid password reset link.
+
+Test Steps:
+
+1. Open the reset link.
+2. Reset the password successfully.
+3. Open the same link again.
+
+Expected Result:\
+The previously used reset link should no longer work.
+
+Separate Jira fields:
+
+- Labels: `negative`
+- Priority: Medium
+- Test Type: Manual
+- Parent: Leave empty
+- Link to Story: Password Reset
+
+## TC-10: Logout and Browser Back Validation
+
+Summary: `Logout and Browser Back Validation`
+
+Description
+
+Requirement: REQ-A5
+
+Precondition:\
+User is logged in and viewing an account page.
+
+Test Steps:
+
+1. Click Logout.
+2. Press the browser Back button.
+3. Attempt to access the protected account page.
+
+Expected Result:\
+The session should be ended, and protected account pages should not be accessible.
+
+Separate Jira fields:
+
+- Labels: `negative`
+- Priority: High
+- Test Type: Manual
+- Parent: Leave empty
+- Link to Story: Secure Logout
+
+**************************************************************************************************************************************************************************************************
+
+
+# Module B — Product Catalogue
+
+8 test cases · Epic: Product Catalogue · Stories 6–10
+
+### TC-11: Product Listing with Pagination
+
+Summary: `Product Listing with Pagination`
+
+Description
+
+Requirement: REQ-B1
+
+Precondition:\
+Products are available in the application.
+
+Test Steps:
+
+1. Open the product listing page.
+2. Observe the displayed products.
+3. Navigate to the next page.
+
+Expected Result:\
+Each product should display its image, name, and price. A maximum of 12 products should be displayed per page, and pagination should show the next set of products.
+
+Separate Jira fields:
+
+- Labels: `positive`
+- Priority: High
+- Test Type: Manual
+- Parent: Leave empty
+- Link to Story: Product Listing and Pagination
+
+### TC-12: Product Search with Different Letter Cases
+
+Summary: `Product Search with Different Letter Cases`
+
+Description
+
+Requirement: REQ-B2
+
+Precondition:\
+Products are available in the application.
+
+Test Steps:
+
+1. Open the product listing page.
+2. Search for "cotton shirt".
+3. Search for "COTTON SHIRT".
+4. Compare the search results.
+
+Expected Result:\
+The same matching product should be displayed regardless of the letter case used in the search.
+
+Separate Jira fields:
+
+- Labels: `positive`
+- Priority: High
+- Test Type: Manual
+- Parent: Leave empty
+- Link to Story: Product Search
+
+### TC-13: Product Search with No Matching Results
+
+Summary: `Product Search with No Matching Results`
+
+Description
+
+Requirement: REQ-B2
+
+Precondition:\
+Product listing page is available.
+
+Test Steps:
+
+1. Open the product listing page.
+2. Enter a product name that does not exist.
+3. Submit the search.
+
+Expected Result:\
+The message "No products found" should be displayed.
+
+Separate Jira fields:
+
+- Labels: `negative`
+- Priority: Medium
+- Test Type: Manual
+- Parent: Leave empty
+- Link to Story: Product Search
+
+### TC-14: Filter Products by Category
+
+Summary: `Filter Products by Category`
+
+Description
+
+Requirement: REQ-B3
+
+Precondition:\
+Products from multiple categories are available.
+
+Test Steps:
+
+1. Open the product listing page.
+2. Select the Accessories category.
+3. Apply the filter.
+
+Expected Result:\
+Only products belonging to the Accessories category should be displayed.
+
+Separate Jira fields:
+
+- Labels: `positive`
+- Priority: Medium
+- Test Type: Manual
+- Parent: Leave empty
+- Link to Story: Product Filtering
+
+### TC-15: Apply Category and Price Filters Together
+
+Summary: `Apply Category and Price Filters Together`
+
+Description
+
+Requirement: REQ-B3
+
+Precondition:\
+Products from different categories and price ranges are available.
+
+Test Steps:
+
+1. Open the product listing page.
+2. Select the Accessories category.
+3. Set the price range from Rs. 400 to Rs. 1,000.
+4. Apply both filters.
+
+Expected Result:\
+Only products belonging to the Accessories category and matching the selected price range should be displayed.
+
+Separate Jira fields:
+
+- Labels: `positive`
+- Priority: High
+- Test Type: Manual
+- Parent: Leave empty
+- Link to Story: Product Filtering
+
+### TC-16: Sort Products by Price
+
+Summary: `Sort Products by Price`
+
+Description
+
+Requirement: REQ-B4
+
+Precondition:\
+Multiple products with different prices are available.
+
+Test Steps:
+
+1. Open the product listing page.
+2. Select price low-to-high sorting.
+3. Verify the displayed order.
+4. Select price high-to-low sorting.
+5. Verify the displayed order again.
+
+Expected Result:\
+Products should be sorted correctly in ascending and descending price order.
+
+Separate Jira fields:
+
+- Labels: `positive`
+- Priority: High
+- Test Type: Manual
+- Parent: Leave empty
+- Link to Story: Product Sorting
+
+### TC-17: Sort Products Alphabetically
+
+Summary: `Sort Products Alphabetically`
+
+Description
+
+Requirement: REQ-B4
+
+Precondition:\
+Multiple products with different names are available.
+
+Test Steps:
+
+1. Open the product listing page.
+2. Select name A-to-Z sorting.
+3. Observe the displayed product order.
+
+Expected Result:\
+Products should be displayed in alphabetical order from A to Z.
+
+Separate Jira fields:
+
+- Labels: `positive`
+- Priority: Medium
+- Test Type: Manual
+- Parent: Leave empty
+- Link to Story: Product Sorting
+
+### TC-18: Add to Cart for Out-of-Stock Product
+
+Summary: `Add to Cart for Out-of-Stock Product`
+
+Description
+
+Requirement: REQ-B5
+
+Precondition:\
+An out-of-stock product is available in the catalogue.
+
+Test Steps:
+
+1. Open the product listing page.
+2. Select Backpack.
+3. Open its product details page.
+4. Check the stock status and Add to Cart action.
+
+Expected Result:\
+Product details should display the required information and out-of-stock status. The Add to Cart action should be disabled.
+
+Separate Jira fields:
+
+- Labels: `negative`
+- Priority: High
+- Test Type: Manual
+- Parent: Leave empty
+- Link to Story: Product Details and Stock
+
+
+**************************************************************************************************************************************************************************************************
+
+
+## Module C — Shopping Cart and Checkout
+
+We'll create 17 test cases for this module. That brings our running total to 35.
+
+Epic: Shopping Cart and Checkout · Stories 11–15 · Test Type: Manual
+
+### TC-19: Add Product to Cart and Verify Item Count
+
+Summary: `Add Product to Cart and Verify Item Count`
+
+Description
+
+Requirement: REQ-C1
+
+Precondition:\
+Product listing page is available.
+
+Test Steps:
+
+1. Open the product listing page.
+2. Select Cotton Shirt.
+3. Click Add to Cart.
+4. Observe the cart icon.
+
+Expected Result:\
+The cart icon should display the total number of items in the cart.
+
+Separate Jira fields:
+
+- Labels: `positive`
+- Priority: High
+- Test Type: Manual
+- Parent: Leave empty
+- Link to Story: Cart Item Count
+
+### TC-20: Verify Cart Count for Multiple Quantities
+
+Summary: `Verify Cart Count for Multiple Quantities`
+
+Description
+
+Requirement: REQ-C1
+
+Precondition:\
+Cart is empty.
+
+Test Steps:
+
+1. Add two Cotton Shirts to the cart.
+2. Add one Notebook to the cart.
+3. Observe the cart icon.
+
+Expected Result:\
+The cart icon should display the total number of items, which is 3.
+
+Separate Jira fields:
+
+- Labels: `positive`
+- Priority: Medium
+- Test Type: Manual
+- Parent: Leave empty
+- Link to Story: Cart Item Count
+
+### TC-21: Verify Minimum and Maximum Cart Quantity
+
+Summary: `Verify Minimum and Maximum Cart Quantity`
+
+Description
+
+Requirement: REQ-C2
+
+Precondition:\
+Running Shoes are added to the cart.
+
+Test Steps:
+
+1. Set the quantity to 1.
+2. Verify the line total.
+3. Set the quantity to 10.
+4. Verify the updated line total.
+
+Expected Result:\
+The application should accept quantities 1 and 10 and update the line total correctly.
+
+Separate Jira fields:
+
+- Labels: `boundary`
+- Priority: High
+- Test Type: Manual
+- Parent: Leave empty
+- Link to Story: Cart Quantity Management
+
+### TC-22: Enter Quantity Greater Than Allowed Limit
+
+Summary: `Enter Quantity Greater Than Allowed Limit`
+
+Description
+
+Requirement: REQ-C2
+
+Precondition:\
+Running Shoes are added to the cart.
+
+Test Steps:
+
+1. Open the shopping cart.
+2. Change the quantity to 11.
+3. Submit or update the quantity.
+
+Expected Result:\
+The application should reject quantity 11 because the maximum allowed quantity is 10.
+
+Separate Jira fields:
+
+- Labels: `negative`
+- Priority: High
+- Test Type: Manual
+- Parent: Leave empty
+- Link to Story: Cart Quantity Management
+
+### TC-23: Remove Product from Cart
+
+Summary: `Remove Product from Cart`
+
+Description
+
+Requirement: REQ-C3
+
+Precondition:\
+Cart contains Cotton Shirt and Notebook.
+
+Test Steps:
+
+1. Open the shopping cart.
+2. Remove Cotton Shirt.
+3. Observe the cart contents and total.
+
+Expected Result:\
+Cotton Shirt should be removed, and the cart total should update immediately.
+
+Separate Jira fields:
+
+- Labels: `positive`
+- Priority: High
+- Test Type: Manual
+- Parent: Leave empty
+- Link to Story: Remove Items from Cart
+
+### TC-24: Remove Last Item and Verify Empty Cart
+
+Summary: `Remove Last Item and Verify Empty Cart`
+
+Description
+
+Requirement: REQ-C3
+
+Precondition:\
+Cart contains only one product.
+
+Test Steps:
+
+1. Open the shopping cart.
+2. Remove the remaining product.
+3. Observe the cart page.
+
+Expected Result:\
+The cart should become empty, the total should update, and an empty-cart message should be displayed.
+
+Separate Jira fields:
+
+- Labels: `boundary`
+- Priority: Medium
+- Test Type: Manual
+- Parent: Leave empty
+- Link to Story: Remove Items from Cart
+
+### TC-25: Apply SAVE10 to Eligible Cart
+
+Summary: `Apply SAVE10 to Eligible Cart`
+
+Description
+
+Requirement: REQ-C4
+
+Precondition:\
+Cart contains products with a total value of at least Rs. 1,000.
+
+Test Steps:
+
+1. Add Cotton Shirt worth Rs. 1,200 to the cart.
+2. Open the shopping cart.
+3. Enter coupon code SAVE10.
+4. Apply the coupon.
+
+Expected Result:\
+A 10% discount of Rs. 120 should be applied to the eligible cart.
+
+Separate Jira fields:
+
+- Labels: `positive`
+- Priority: High
+- Test Type: Manual
+- Parent: Leave empty
+- Link to Story: Apply Discount Coupon
+
+### TC-26: Apply SAVE10 Below Minimum Cart Value
+
+Summary: `Apply SAVE10 Below Minimum Cart Value`
+
+Description
+
+Requirement: REQ-C4
+
+Precondition:\
+Cart contains products worth less than Rs. 1,000.
+
+Test Steps:
+
+1. Add two Notebooks worth Rs. 300 in total.
+2. Open the shopping cart.
+3. Enter coupon code SAVE10.
+4. Apply the coupon.
+
+Expected Result:\
+The 10% discount should not be applied because the cart value is below Rs. 1,000.
+
+Separate Jira fields:
+
+- Labels: `negative`
+- Priority: High
+- Test Type: Manual
+- Parent: Leave empty
+- Link to Story: Apply Discount Coupon
+
+### TC-27: Verify Coupon Minimum Value Boundary
+
+Summary: `Verify Coupon Minimum Value Boundary`
+
+Description
+
+Requirement: REQ-C4
+
+Precondition:\
+Cart is available for coupon testing.
+
+Test Steps:
+
+1. Add products worth Rs. 999 to the cart and apply SAVE10.
+2. Observe the discount.
+3. Change the cart value to Rs. 1,000.
+4. Apply SAVE10 again.
+
+Expected Result:\
+No discount should be applied at Rs. 999. A 10% discount should be applied at Rs. 1,000.
+
+Separate Jira fields:
+
+- Labels: `boundary`
+- Priority: High
+- Test Type: Manual
+- Parent: Leave empty
+- Link to Story: Apply Discount Coupon
+
+### TC-28: Attempt to Apply Multiple Coupons
+
+Summary: `Attempt to Apply Multiple Coupons`
+
+Description
+
+Requirement: REQ-C4
+
+Precondition:\
+An eligible cart is available and SAVE10 has already been applied.
+
+Test Steps:
+
+1. Apply SAVE10 to the eligible cart.
+2. Attempt to apply another coupon to the same order.
+3. Observe the applied discounts.
+
+Expected Result:\
+Only one coupon should be applied per order.
+
+Separate Jira fields:
+
+- Labels: `negative`
+- Priority: Medium
+- Test Type: Manual
+- Parent: Leave empty
+- Link to Story: Apply Discount Coupon
+
+### TC-29: Attempt Checkout Without Login
+
+Summary: `Attempt Checkout Without Login`
+
+Description
+
+Requirement: REQ-C5
+
+Precondition:\
+User is not logged in and the cart contains a product.
+
+Test Steps:
+
+1. Open the shopping cart.
+2. Click Checkout.
+3. Observe the application response.
+
+Expected Result:\
+The application should require the user to log in before checkout. Guest checkout should not be allowed.
+
+Separate Jira fields:
+
+- Labels: `negative`
+- Priority: High
+- Test Type: Manual
+- Parent: Leave empty
+- Link to Story: Checkout and Order Confirmation
+
+### TC-30: Checkout with Valid Shipping Details
+
+Summary: `Checkout with Valid Shipping Details`
+
+Description
+
+Requirement: REQ-C5
+
+Precondition:\
+User is logged in and the cart contains a product.
+
+Test Steps:
+
+1. Click Checkout.
+2. Enter shipping name.
+3. Enter a valid 10-digit phone number.
+4. Enter address and city.
+5. Enter a valid 6-digit PIN code.
+6. Submit the shipping details.
+
+Expected Result:\
+All mandatory shipping details should be accepted when entered in the required formats.
+
+Separate Jira fields:
+
+- Labels: `positive`
+- Priority: High
+- Test Type: Manual
+- Parent: Leave empty
+- Link to Story: Checkout and Order Confirmation
+
+### TC-31: Checkout with Invalid Phone and PIN Code
+
+Summary: `Checkout with Invalid Phone and PIN Code`
+
+Description
+
+Requirement: REQ-C5
+
+Precondition:\
+User is logged in and the checkout form is available.
+
+Test Steps:
+
+1. Enter valid shipping name, address, and city.
+2. Enter a phone number with fewer than 10 digits.
+3. Enter a PIN code with fewer than 6 digits.
+4. Submit the shipping form.
+
+Expected Result:\
+The application should reject the invalid phone number and PIN code.
+
+Separate Jira fields:
+
+- Labels: `negative`
+- Priority: High
+- Test Type: Manual
+- Parent: Leave empty
+- Link to Story: Checkout and Order Confirmation
+
+### TC-32: Place Order Using Card Payment
+
+Summary: `Place Order Using Card Payment`
+
+Description
+
+Requirement: REQ-C6
+
+Precondition:\
+User is logged in and valid shipping details are provided.
+
+Test Steps:
+
+1. Proceed to payment.
+2. Select Card as the payment method.
+3. Complete the payment.
+4. Observe the order confirmation page.
+5. Check the confirmation email.
+
+Expected Result:\
+The order should be placed successfully, a unique Order ID should appear on the confirmation page, and a confirmation email should be sent.
+
+Separate Jira fields:
+
+- Labels: `positive`
+- Priority: High
+- Test Type: Manual
+- Parent: Leave empty
+- Link to Story: Checkout and Order Confirmation
+
+### TC-33: Place Order Using UPI Payment
+
+Summary: `Place Order Using UPI Payment`
+
+Description
+
+Requirement: REQ-C6
+
+Precondition:\
+User is logged in and valid shipping details are provided.
+
+Test Steps:
+
+1. Proceed to payment.
+2. Select UPI as the payment method.
+3. Complete the payment.
+4. Observe the order confirmation page.
+5. Check the confirmation email.
+
+Expected Result:\
+The order confirmation page should display a unique Order ID, and a confirmation email should be sent.
+
+Separate Jira fields:
+
+- Labels: `positive`
+- Priority: High
+- Test Type: Manual
+- Parent: Leave empty
+- Link to Story: Checkout and Order Confirmation
+
+### TC-34: Place Order Using Cash on Delivery
+
+Summary: `Place Order Using Cash on Delivery`
+
+Description
+
+Requirement: REQ-C6
+
+Precondition:\
+User is logged in and valid shipping details are provided.
+
+Test Steps:
+
+1. Proceed to payment.
+2. Select Cash on Delivery.
+3. Confirm the order.
+4. Observe the order confirmation page.
+5. Check the confirmation email.
+
+Expected Result:\
+The order should be placed successfully, a unique Order ID should be displayed, and a confirmation email should be sent.
+
+Separate Jira fields:
+
+- Labels: `positive`
+- Priority: High
+- Test Type: Manual
+- Parent: Leave empty
+- Link to Story: Checkout and Order Confirmation
+
+### TC-35: Verify Order Confirmation Contains Order ID
+
+Summary: `Verify Order Confirmation Contains Order ID`
+
+Description
+
+Requirement: REQ-C6
+
+Precondition:\
+User has completed checkout using a supported payment method.
+
+Test Steps:
+
+1. Complete an order using UPI.
+2. Open the order confirmation page.
+3. Check whether a unique Order ID is displayed.
+4. Check whether the confirmation email is received.
+
+Expected Result:\
+The confirmation page should display a unique Order ID, and a confirmation email should be sent.
+
+Separate Jira fields:
+
+- Labels: `negative`
+- Priority: High
+- Test Type: Manual
+- Parent: Leave empty
+- Link to Story: Checkout and Order Confirmation
+
+## 3. Updated test suite
+
+# 35
+
+Planned test cases after Module C
+
+| Module                 | Test cases |
+| ---------------------- | ---------- |
+| A — Account Management | 10         |
+| B — Product Catalogue  | 8          |
+| C — Cart and Checkout  | 17         |
+| Total                  | 35         |
+
+
+Important observation mapping: TC-02, TC-07, TC-08, TC-12, TC-16, TC-22, TC-26, and TC-35.
+
+
+
+
