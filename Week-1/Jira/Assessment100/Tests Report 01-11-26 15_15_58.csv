@@ -1,0 +1,36 @@
+﻿Key;Summary;Test Type;Status;Status
+SEQ-54;Verify Order Confirmation Contains Order ID;Manual;To Do;FAILED
+SEQ-53;Place Order Using Cash on Delivery;Manual;To Do;PASSED
+SEQ-52;Place Order Using UPI Payment;Manual;To Do;PASSED
+SEQ-51;Place Order Using Card Payment;Manual;To Do;PASSED
+SEQ-50;Checkout with Invalid Phone and PIN Code;Manual;To Do;PASSED
+SEQ-49;Checkout with Valid Shipping Details;Manual;To Do;PASSED
+SEQ-48;Attempt Checkout Without Login;Manual;To Do;PASSED
+SEQ-47;Attempt to Apply Multiple Coupons;Manual;To Do;PASSED
+SEQ-46;Verify Coupon Minimum Value Boundary;Manual;To Do;PASSED
+SEQ-45;Apply SAVE10 Below Minimum Cart Value;Manual;To Do;FAILED
+SEQ-44;Apply SAVE10 to Eligible Cart;Manual;To Do;PASSED
+SEQ-43;Remove Last Item and Verify Empty Cart;Manual;To Do;PASSED
+SEQ-42;Remove Product from Cart;Manual;To Do;PASSED
+SEQ-41;Enter Quantity Greater Than Allowed Limit;Manual;To Do;FAILED
+SEQ-40;Verify Minimum and Maximum Cart Quantity;Manual;To Do;PASSED
+SEQ-39;Verify Cart Count for Multiple Quantities;Manual;To Do;PASSED
+SEQ-38;Add Product to Cart and Verify Item Count;Manual;To Do;PASSED
+SEQ-37;Add to Cart for Out-of-Stock Product;Manual;To Do;PASSED
+SEQ-36;Sort Products Alphabetically;Manual;To Do;PASSED
+SEQ-35;Sort Products by Price;Manual;To Do;FAILED
+SEQ-34;Apply Category and Price Filters Together;Manual;To Do;PASSED
+SEQ-33;Filter Products by Category;Manual;To Do;PASSED
+SEQ-32;Product Search with No Matching Results;Manual;To Do;PASSED
+SEQ-31;Product Search with Different Letter Cases;Manual;To Do;FAILED
+SEQ-30;Product Listing with Pagination;Manual;To Do;PASSED
+SEQ-29;Logout and Browser Back Validation;Manual;To Do;PASSED
+SEQ-28;Password Reset Link Can Be Used Only Once;Manual;To Do;PASSED
+SEQ-27;Password Reset Link Expiration;Manual;To Do;FAILED
+SEQ-26;Account Unlock after 15 Minutes;Manual;To Do;FAILED
+SEQ-25;Account Lock after Five Failed Attempts;Manual;To Do;PASSED
+SEQ-24;Login with Invalid Credentials;Manual;To Do;PASSED
+SEQ-23;Successful Login;Manual;To Do;PASSED
+SEQ-22;Registration with Duplicate Email;Manual;To Do;PASSED
+SEQ-21;Registration with Invalid Password;Manual;To Do;FAILED
+SEQ-20;Successful User Registration;Manual;To Do;PASSED

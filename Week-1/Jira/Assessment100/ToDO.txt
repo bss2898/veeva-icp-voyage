@@ -1,0 +1,287 @@
+# ShopEasy QA – Jira Test Management Project
+## Project Roadmap and Requirements Reference
+
+### 1. Project Overview
+
+ShopEasy is an online shopping web application where customers can register, log in, browse products, manage their shopping cart, apply coupons, and place orders.
+
+The purpose of this project is to manage the complete QA testing process using Jira. I will convert the given requirements into epics and user stories, plan the work in Scrum sprints, create and execute test cases using Xray, report defects, and monitor the testing progress through dashboards and reports.
+
+This is a test management project. I will focus on requirement coverage, test execution, defect tracking, and release quality rather than developing the shopping application itself.
+
+### 2. Project Details
+
+- Project name: ShopEasy QA
+- Project key: SEQ
+- Project type: Scrum
+- Application version: Release 1.0
+- Testing tool: Jira with Xray Test Management
+- Test environment: ShopEasy build 1.0.3, staging server, latest Chrome browser, Windows 11
+- Main objective: Maintain traceability between requirements, user stories, test cases, and defects.
+
+### 3. Project Goals
+
+1. Organize the application requirements into meaningful epics and user stories.
+2. Plan the testing work across two Scrum sprints.
+3. Create at least 25 test cases covering positive, negative, and boundary scenarios.
+4. Link each test case to its related user story.
+5. Execute the tests and record Pass, Fail, or other applicable statuses in Xray.
+6. Report defects when the observed application behaviour does not match a requirement.
+7. Track defects through the QA workflow until they are closed.
+8. Create Jira filters and a dashboard to monitor testing and defect status.
+9. Prepare a final project report containing the results, metrics, risks, and release recommendation.
+
+### 4. Functional Requirements
+
+#### Module A – User Registration and Account Management
+
+**REQ-A1: User Registration**
+
+The application must allow users to register with their full name, a valid and unique email address, and a password containing at least eight characters, including at least one number and one special character.
+
+**REQ-A2: User Login**
+
+Registered users must be able to log in using their email address and password. Invalid login details must display the message "Invalid email or password".
+
+**REQ-A3: Account Locking**
+
+The account must be locked for 15 minutes after five consecutive failed login attempts.
+
+**REQ-A4: Password Reset**
+
+The application must send a password reset link by email. The link must expire after 30 minutes and must be usable only once.
+
+**REQ-A5: Logout**
+
+Logging out must end the user's session. Using the browser Back button must not display protected account pages after logout.
+
+#### Module B – Product Catalogue
+
+**REQ-B1: Product Listing**
+
+The product listing must display 12 products per page with pagination. Each product must show its image, name, and price.
+
+**REQ-B2: Product Search**
+
+Users must be able to search by product name without case sensitivity. If no matching products exist, the application must display "No products found".
+
+**REQ-B3: Product Filters**
+
+Users must be able to filter products by category and price range. Both filters must work together when applied at the same time.
+
+**REQ-B4: Product Sorting**
+
+Users must be able to sort products by price from low to high, price from high to low, and name from A to Z.
+
+**REQ-B5: Product Details**
+
+The product details page must display the product images, name, price, description, and stock status. The Add to Cart action must be disabled for out-of-stock products.
+
+#### Module C – Shopping Cart and Checkout
+
+**REQ-C1: Cart Item Count**
+
+The cart icon must display the total number of items in the cart.
+
+**REQ-C2: Quantity Management**
+
+Users must be able to select a quantity between 1 and 10. The line total must update when the quantity changes.
+
+**REQ-C3: Remove Cart Items**
+
+Users must be able to remove items from the cart. The cart total must update, and an appropriate message must appear when the cart is empty.
+
+**REQ-C4: Coupon Application**
+
+The coupon SAVE10 must provide a 10% discount when the cart value is at least Rs. 1,000. Only one coupon may be applied per order.
+
+**REQ-C5: Checkout Validation**
+
+Users must log in before checkout. The shipping form must require a name, a 10-digit phone number, an address, a city, and a 6-digit PIN code.
+
+**REQ-C6: Payment and Order Confirmation**
+
+The application must support Card, UPI, and Cash on Delivery (COD). After a successful order, the application must display a confirmation page containing a unique Order ID and send a confirmation email.
+
+### 5. Sample Product Data
+
+The following products will be used when preparing test cases.
+
+| Product | Category | Price | Stock |
+|---|---|---:|---|
+| Cotton Shirt | Clothing | Rs. 1,200 | In Stock |
+| Running Shoes | Footwear | Rs. 3,500 | In Stock |
+| Water Bottle | Accessories | Rs. 450 | In Stock |
+| Backpack | Accessories | Rs. 999 | Out of Stock |
+| Notebook | Stationery | Rs. 150 | In Stock |
+
+I will use this data for search, filtering, sorting, stock validation, cart calculations, and coupon testing.
+
+### 6. Jira Project Structure
+
+I will organize the project using the following hierarchy:
+
+- **Epic:** A major application area or feature group.
+- **Story:** A user requirement expressed from the customer's perspective.
+- **Test:** A test case created and managed through Xray.
+- **Bug:** A defect raised when actual behaviour differs from the expected behaviour.
+- **Task:** Additional project or testing work, such as preparing the test plan.
+- **Subtask:** A smaller activity under a parent work item, when required.
+
+I will create at least three epics and between 12 and 15 user stories. Each story will contain at least two acceptance criteria written in Given–When–Then format.
+
+Every story will include the relevant requirement ID in its description and labels. Each requirement from REQ-A1 to REQ-C6 must be covered by at least one story.
+
+### 7. Scrum Sprint Plan
+
+I will divide the project work into two sprints, each lasting one week or less if required by the trainer.
+
+**Sprint 1 – Planning and Core Testing**
+
+- Review the requirements and finalize the project structure.
+- Create epics and user stories.
+- Assign story points and prioritize the stories.
+- Prepare the test plan and initial test cases.
+- Start testing the account management and product catalogue modules.
+- Record progress through the Scrum board.
+
+**Sprint 2 – Cart, Checkout, and Defect Validation**
+
+- Complete the remaining user stories and test cases.
+- Test shopping cart, coupon, checkout, payment, and order confirmation features.
+- Execute the remaining tests and record results.
+- Create and link defect reports.
+- Retest fixed defects and update their statuses.
+- Complete the sprint and review the final testing results.
+
+I will use the sprint board and burndown chart to monitor progress. Sprint completion will reflect the work actually recorded in Jira.
+
+### 8. Test Case Planning and Execution
+
+I will create at least 25 test cases in Xray, including:
+
+- At least 10 positive test cases.
+- At least 10 negative test cases.
+- At least 5 edge or boundary test cases.
+
+Each test case will include a clear summary, preconditions where necessary, numbered test steps, test data, expected results, priority, and appropriate labels.
+
+The expected results must be based on the given requirements. I will link each test case to its related user story and ensure that every requirement has positive and negative or boundary coverage.
+
+I will create a Test Plan and Test Execution in Xray, add the relevant test cases, execute them, and record the actual results. Tests not connected to the supplied observations will be treated as passing only where the assignment instructs me to do so and the recorded result supports that status.
+
+### 9. Defect Management
+
+I will review the eight observations provided in the assignment and compare each observation against its corresponding requirement.
+
+An observation will be recorded as a defect when the actual behaviour violates an explicit requirement. I will not report behaviour as a defect merely because it differs from my personal expectation.
+
+Each defect report will contain:
+
+- A clear and unique summary.
+- The affected requirement and related user story.
+- The testing environment.
+- Preconditions and steps to reproduce.
+- Expected result and actual result.
+- Severity and priority.
+- Supporting evidence from the assignment.
+- Links to the failed test case and relevant story.
+
+The assignment requires at least five defects. Each failed test must be linked to the appropriate bug.
+
+The bug workflow will be:
+
+**Open → In Progress → Fixed → Retest → Closed**
+
+If a fix fails during retesting, I will return the defect to In Progress and add a comment explaining the unsuccessful retest.
+
+### 10. Dashboard and Saved Filters
+
+I will create a Jira dashboard named **ShopEasy QA Dashboard** to show the project's testing and defect status.
+
+The dashboard will include at least four relevant gadgets, covering areas such as:
+
+- Sprint Burndown.
+- Bugs grouped by status or priority.
+- Created versus resolved issues.
+- Open critical bugs.
+- Test execution results from Xray.
+
+I will also save at least five JQL filters:
+
+1. All open bugs.
+2. Open high-priority bugs.
+3. Bugs grouped or filtered by assignee.
+4. Failed test cases.
+5. Stories assigned to Sprint 1.
+
+I will use the actual project key, sprint name, issue fields, and Xray fields available in my Jira configuration when creating these filters.
+
+### 11. Test Results and Quality Metrics
+
+I will summarize the test execution results using the following categories:
+
+- Total tests.
+- Passed tests.
+- Failed tests.
+- Blocked tests.
+- Tests not yet executed.
+
+I will calculate the following metrics where the available data supports them:
+
+- **Pass percentage:** Passed tests divided by executed tests, multiplied by 100.
+- **Fail percentage:** Failed tests divided by executed tests, multiplied by 100.
+- **Defect density:** Total defects divided by the chosen unit, such as stories or tests.
+- **Requirement coverage:** Requirements with at least one linked test divided by total requirements, multiplied by 100.
+- **Defect closure rate:** Closed defects divided by total defects, multiplied by 100.
+
+I will state the denominator used for each metric and avoid counting tests that have not been executed as passed or failed.
+
+### 12. Final Project Report
+
+At the end of the project, I will prepare a one- to two-page Word or PDF report containing:
+
+- Project scope and testing environment.
+- Project duration and sprint details.
+- Number of epics, stories, and test cases.
+- Test execution summary.
+- Defect summary by severity and status.
+- Quality metrics.
+- A screenshot of the Jira dashboard.
+- Important risks or limitations.
+- A final Go or No-Go recommendation for release 1.0, based on the recorded evidence.
+
+### 13. Work Sequence and Deliverables
+
+I will complete the project in the following order:
+
+1. Create and verify the ShopEasy QA Scrum project.
+2. Configure the required issue types and confirm Xray is available.
+3. Create epics and user stories with acceptance criteria.
+4. Plan the two sprints and assign story points.
+5. Create the Xray Test Plan and test cases.
+6. Link tests to stories and execute them.
+7. Record the supplied observations and create valid defects.
+8. Configure the defect workflow and perform retesting.
+9. Create the dashboard and save the required JQL filters.
+10. Prepare the final report and collect screenshots and exports.
+
+The final submission will include the Jira project link with appropriate trainer access, dashboard screenshot, workflow screenshot, exported test cases and results, and the final report.
+
+### 14. Completion Criteria
+
+I will consider the project complete when the requirements are traceable to user stories and tests, the required test cases have been created and executed, valid defects are linked to failed tests, the defect workflow is demonstrated, both sprints contain recorded progress, the dashboard and saved filters are available, and the final report is ready.
+
+All results, screenshots, and metrics will reflect the actual work completed in Jira. I will not mark work as completed unless it has been recorded and verified.
+
+
+Bug issue
+Bug	Summary	Requirement	Observation
+BUG-01	Registration accepts password without special character	REQ-A1	OBS-1
+BUG-02	Account unlocks after 5 minutes instead of 15	REQ-A3	OBS-2
+BUG-03	Password reset link works after 30 minutes	REQ-A4	OBS-3
+BUG-04	Product search is case-sensitive	REQ-B2	OBS-4
+BUG-05	Price sorting high-to-low displays incorrect order	REQ-B4	OBS-5
+BUG-06	Cart accepts quantity greater than 10	REQ-C2	OBS-6
+BUG-07	SAVE10 applies discount below minimum cart value	REQ-C4	OBS-7
+BUG-08	UPI order confirmation does not display Order ID	REQ-C6	OBS-8
