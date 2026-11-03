@@ -1,0 +1,14 @@
+**Write code to perform CRUD 
+operations on files. 
+
+**Java I/O Operations  
+❖ Read and Write File  
+❖ Creation of File  
+❖ Buffer Reader  
+❖ Buffer Writer  
+❖ File Permissions 
+
+
+
+➢ Write code to perform CRUD operations on files. 
+
