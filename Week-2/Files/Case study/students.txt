@@ -1,3 +1,4 @@
 rollno;name;age;m1;m2;m3;grade
-rollno;name;age;m1;m2;m3;grade
-31;Bala;21;49;50;49;D
+310;Bala;20;90;80;50;C
+312;Arnav;23;90;70;75;C
+322;Bell;23;90;35;86;C
