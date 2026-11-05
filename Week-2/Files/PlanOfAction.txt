@@ -12,3 +12,7 @@ operations on files.
 
 ➢ Write code to perform CRUD operations on files. 
 
+The given case studies
+
+
+

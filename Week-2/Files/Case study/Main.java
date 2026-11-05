@@ -11,7 +11,7 @@ public class Main{
         //System.out.println("Hello, World!");
         //Creating an epty text file first
 
-       /// createFile("students.txt");
+       createFile("students.txt");
         File recordFile=new File("students.txt");
         if(!recordFile.exists()){
             System.out.println("File not found");
@@ -60,66 +60,155 @@ public class Main{
         }
 
     }
-    static void updateRoll(File recordFile){
-        System.out.println("Enter roll no");
-        int rollno=sc.nextInt();
-        System.out.println("Enter new name");
-        String name=sc.next();
-        System.out.println("Enter new age");
-        int age=sc.nextInt();
-        System.out.println("Enter new marks of 3 subjects");
-        int m1=sc.nextInt();
-        int m2=sc.nextInt();
-        int m3=sc.nextInt();
-        char grade;
-        int total=m1+m2+m3;
-        if(total>=270){
-            grade='A';
-        }
-        else if(total>=240){
-            grade='B';
-        }
-        else if(total>=210){
-            grade='C';
-        }
-        else{
-            grade='D';
-        }
-        try(FileWriter fw=new FileWriter(recordFile)){
-            
-        }
-        catch(IOException e){
-            e.printStackTrace();
-        }
-        
+    
+static void updateRoll(File recordFile){
+    System.out.println("Enter roll no to update");
+    int rollno=sc.nextInt();
+
+    System.out.println("Enter new name");
+    String name=sc.next();
+
+    System.out.println("Enter new age");
+    int age=sc.nextInt();
+
+    System.out.println("Enter new marks of 3 subjects");
+    int m1=sc.nextInt();
+    int m2=sc.nextInt();
+    int m3=sc.nextInt();
+
+    char grade;
+    int total=m1+m2+m3;
+
+    if(total>=270){
+        grade='A';
     }
-    static void updateName(File recordFile){
-        System.out.println("Enter name");
-        String name=sc.next();
-        System.out.println("Enter new roll no");
-        int rollno=sc.nextInt();
-        System.out.println("Enter new age");
-        int age=sc.nextInt();
-        System.out.println("Enter new marks of 3 subjects");
-        int m1=sc.nextInt();
-        int m2=sc.nextInt();
-        int m3=sc.nextInt();
-        char grade;
-        int total=m1+m2+m3;
-        if(total>=270){
-            grade='A';
+    else if(total>=240){
+        grade='B';
+    }
+    else if(total>=210){
+        grade='C';
+    }
+    else{
+        grade='D';
+    }
+
+    try{
+        StringBuilder sb=new StringBuilder();
+        boolean found=false;
+
+        try(Scanner fileScanner=new Scanner(recordFile)){
+            while(fileScanner.hasNextLine()){
+                String line=fileScanner.nextLine();
+                String[] parts=line.split(";");
+
+                if(parts.length>=7 && parts[0].equals(String.valueOf(rollno))){
+                    sb.append(rollno).append(";")
+                      .append(name).append(";")
+                      .append(age).append(";")
+                      .append(m1).append(";")
+                      .append(m2).append(";")
+                      .append(m3).append(";")
+                      .append(grade).append("\n");
+
+                    found=true;
+                }
+                else{
+                    sb.append(line).append("\n");
+                }
+            }
         }
-        else if(total>=240){
-            grade='B';
-        }
-        else if(total>=210){
-            grade='C';
+
+        if(found){
+            try(FileWriter fw=new FileWriter(recordFile)){
+                fw.write(sb.toString());
+            }
+            System.out.println("Record updated successfully");
         }
         else{
-            grade='D';
+            System.out.println("Roll number not found");
         }
-        
-    }   
+    }
+    catch(IOException e){
+        e.printStackTrace();
+    }
+}
+
+    
+static void updateName(File recordFile){
+    System.out.println("Enter name to update");
+    String oldName=sc.next();
+
+    System.out.println("Enter new roll no");
+    int rollno=sc.nextInt();
+
+    System.out.println("Enter new name");
+    String name=sc.next();
+
+    System.out.println("Enter new age");
+    int age=sc.nextInt();
+
+    System.out.println("Enter new marks of 3 subjects");
+    int m1=sc.nextInt();
+    int m2=sc.nextInt();
+    int m3=sc.nextInt();
+
+    char grade;
+    int total=m1+m2+m3;
+
+    if(total>=270){
+        grade='A';
+    }
+    else if(total>=240){
+        grade='B';
+    }
+    else if(total>=210){
+        grade='C';
+    }
+    else{
+        grade='D';
+    }
+
+    try{
+        StringBuilder sb=new StringBuilder();
+        boolean found=false;
+
+        try(Scanner fileScanner=new Scanner(recordFile)){
+            while(fileScanner.hasNextLine()){
+                String line=fileScanner.nextLine();
+                String[] parts=line.split(";");
+
+                if(parts.length>=7 && parts[1].equals(oldName)){
+                    sb.append(rollno).append(";")
+                      .append(name).append(";")
+                      .append(age).append(";")
+                      .append(m1).append(";")
+                      .append(m2).append(";")
+                      .append(m3).append(";")
+                      .append(grade).append("\n");
+
+                    found=true;
+                }
+                else{
+                    sb.append(line).append("\n");
+                }
+            }
+        }
+
+        if(found){
+            try(FileWriter fw=new FileWriter(recordFile)){
+                fw.write(sb.toString());
+            }
+            System.out.println("Record updated successfully");
+        }
+        else{
+            System.out.println("Name not found");
+        }
+    }
+    catch(IOException e){
+        e.printStackTrace();
+    }
+}
+
     static void deleteMenu(File recordFile){
         System.out.println("1.Delete all records\n2.Delete record by roll no.\n3.Delete record on name\n.4.exit");
         int ch=sc.nextInt();
