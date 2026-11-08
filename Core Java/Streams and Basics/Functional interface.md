@@ -1,0 +1,124 @@
+In a Java interview, questions on Functional Programming (FP) and Functional Interfaces assess your shift from the traditional Object-Oriented (Imperative) mindset to a Declarative one. Interviewers want to see if you understand why these features were added in Java 8 and how they work under the hood, rather than just memorizing syntax.
+
+
+
+1\. Core Paradigm Shift: OOP vs. Functional Programming
+
+
+
+Interviewers frequently ask: "Why did Java introduce Functional Programming?"
+
+• Imperative (OOP): Focuses on how to do things. You write step-by-step code, manage state, and mutate variables.
+
+• Declarative (FP): Focuses on what to do. You pass behavior (functions) as data.
+
+• Key FP Pillars in Java:
+
+&#x09;• First-Class Functions: Behavior can be assigned to variables, passed as arguments, or returned from methods.
+
+&#x09;• Immutability: Avoid changing state after creation, which prevents side effects and naturally makes code thread-safe.
+
+&#x09;• Pure Functions: Functions that produce the same output for the same input and have zero side effects (e.g., they don't modify global state or database records).
+
+
+
+2\. The Functional Interface (FI)
+
+
+
+A Functional Interface is an interface that contains exactly one abstract method (known as the Single Abstract Method or SAM rule). FIs serve as the data type for lambda expressions and method references.
+
+
+
+💡 The Tricky Rules Interviewers Test:
+
+
+
+1\. Default and Static Methods: An interface can have multiple default or static methods and still be a functional interface because these methods have implementations.
+
+2\. Object Class Methods: If an interface declares an abstract method that overrides one of the public methods of java.lang.Object (like equals(Object obj) or toString()), it does not count toward the single abstract method limit.
+
+Example: java.util.Comparator is a functional interface because its only real abstract method is compare(), even though it also declares equals(Object) explicitly.
+
+
+
+@FunctionalInterface Annotation
+
+
+
+This annotation is optional but recommended. It instructs the compiler to generate a compilation error if the interface accidentally violates the SAM rule (e.g., if someone adds a second abstract method later).
+
+
+
+3\. The 4 Fundamental Core Functional Interfaces
+
+
+
+Java provides a rich set of built-in functional interfaces in the java.util.function package. You must know these four by heart:
+
+
+
+**Interface Name	Abstract Method	Inputs	Outputs	Common Stream API Use Case**
+
+Predicate<T>	boolean test(T t)	1 Object	boolean	Used inside .filter()
+
+Function<T, R>	R apply(T t)	1 Object	1 Object (can be different type)	Used inside .map()
+
+**Consumer<T>	void accept(T t)	1 Object	void	Used inside .forEach()**
+
+Supplier<T>	T get()	None	1 Object	Used inside .orElseGet()
+
+
+
+Note: For variations that accept two inputs, Java provides BiPredicate<T, U>, BiFunction<T, U, R>, and BiConsumer<T, U>.
+
+
+
+4\. High-Yield Interview Questions \& Answers
+
+
+
+
+
+Q: How do Lambdas work under the hood? Do they just compile down to Anonymous Inner Classes?
+
+
+
+Answer: No. Anonymous inner classes generate a separate .class file at compile time, creating overhead. Lambda expressions use the invokedynamic (Indy) bytecode instruction (introduced in Java 7) to dynamically bootstrap and bind the lambda to a recipe at runtime, making them faster and lighter on memory.
+
+
+
+Q: Can a lambda modify a local variable defined outside its scope?
+
+
+
+Answer: No. Local variables used inside a lambda must be final or effectively final (meaning their value is never changed after initialization). This prevents race conditions and data corruption when execution moves across threads.
+
+
+
+Q: What are primitive functional interfaces, and why do we need them?
+
+
+
+Answer: Interfaces like IntPredicate, LongConsumer, or DoubleFunction prevent the performance overhead of auto-boxing and unboxing. If you use a regular Predicate<Integer> inside a massive stream of primitive int data, Java constantly wraps and unwraps the numbers into Integer objects, which severely degrades performance.
+
+
+
+Q: What are the andThen() and compose() methods in the Function interface?
+
+
+
+Answer: They are default methods used for functional composition (chaining functions together):
+
+• f1.andThen(f2) executes f1 first, then passes the output to f2 (Left-to-Right).
+
+• f1.compose(f2) executes f2 first, then passes the output to f1 (Right-to-Left).
+
+If you want to practice answering these, let me know:
+
+• Would you like to review tricky code snippets where you have to predict if a custom interface will compile?
+
+• Do you want to see how these interfaces tie into Streams API interview questions (like lazy evaluation)?
+
+
+

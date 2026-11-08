@@ -52,8 +52,18 @@ public class Main {
     public static void main(String[] args) {
         //Child c = new Child();
         Outer obj=new Outer();
+        Outer.StaticNested obj3=new Outer().new StaticNested(){
+            @Override
+            void display(){
+                System.out.println("Method overriding");
+            }
+        };
+
+
+        obj3.display();
         Outer.StaticNested obj1= obj.new StaticNested();
         Outer.StaticNested1 obj2=new Outer.StaticNested1();
+        Outer.StaticNested1 obj4=new Outer.StaticNested1();
         obj2.display();
         //Outer.staticVar=1000;
         obj1.display();

@@ -1,0 +1,55 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="3Zl8ooSdX_I6nXS91hik">
+    <mxGraphModel dx="610" dy="555" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="RyoVAK5McuLIFRGlYg5--1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Product" vertex="1">
+          <mxGeometry height="250" width="160" x="280" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="RyoVAK5McuLIFRGlYg5--2" parent="RyoVAK5McuLIFRGlYg5--1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="-String prodId&lt;div&gt;-String name&lt;/div&gt;&lt;div&gt;-BigDecimal price&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;-String dom&lt;/span&gt;&lt;/div&gt;&lt;div&gt;-int qih&lt;/div&gt;&lt;div&gt;-String company&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="108" width="160" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="RyoVAK5McuLIFRGlYg5--3" parent="RyoVAK5McuLIFRGlYg5--1" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="8" width="160" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="RyoVAK5McuLIFRGlYg5--4" parent="RyoVAK5McuLIFRGlYg5--1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+getName() : String&lt;div&gt;+getPrice() : BigDecimal&lt;/div&gt;&lt;div&gt;+getCompany() : String&lt;/div&gt;&lt;div&gt;&lt;div&gt;+getQuantityInHand() : int&lt;/div&gt;&lt;div&gt;+addStock(int) : void&lt;/div&gt;&lt;div&gt;+removeStock(int) : void&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="108" width="160" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="ovq0zZyvbiYGvEH9GQEJ-5" edge="1" parent="1" source="RyoVAK5McuLIFRGlYg5--10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="ovq0zZyvbiYGvEH9GQEJ-1" value="uses">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RyoVAK5McuLIFRGlYg5--10" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="InventoryManagement" vertex="1">
+          <mxGeometry height="110" width="160" x="280" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="RyoVAK5McuLIFRGlYg5--11" parent="RyoVAK5McuLIFRGlYg5--10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="-Inventory inventory" vertex="1">
+          <mxGeometry height="26" width="160" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="RyoVAK5McuLIFRGlYg5--12" parent="RyoVAK5McuLIFRGlYg5--10" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="8" width="160" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="RyoVAK5McuLIFRGlYg5--13" parent="RyoVAK5McuLIFRGlYg5--10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+main(String[]) : void&lt;div&gt;+displayMenu() : void&lt;/div&gt;&lt;div&gt;+start : void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="160" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="x5Aej93JFV--LC1weOyi-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="0...*" vertex="1">
+          <mxGeometry height="30" width="60" x="350" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="ovq0zZyvbiYGvEH9GQEJ-6" edge="1" parent="1" source="ovq0zZyvbiYGvEH9GQEJ-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;endArrow=none;endFill=0;startArrow=diamondThin;startFill=1;" target="RyoVAK5McuLIFRGlYg5--1" value="manages">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ovq0zZyvbiYGvEH9GQEJ-1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Inventory" vertex="1">
+          <mxGeometry height="140" width="180" x="270" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="ovq0zZyvbiYGvEH9GQEJ-2" parent="ovq0zZyvbiYGvEH9GQEJ-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="-Map&amp;lt;String,Integer&amp;gt; items" vertex="1">
+          <mxGeometry height="26" width="180" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ovq0zZyvbiYGvEH9GQEJ-3" parent="ovq0zZyvbiYGvEH9GQEJ-1" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="8" width="180" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="ovq0zZyvbiYGvEH9GQEJ-4" parent="ovq0zZyvbiYGvEH9GQEJ-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+addItem(String,int) : void&lt;div&gt;+removeItem(String,int) : void&lt;/div&gt;&lt;div&gt;+checkQuantity(String) : int&lt;/div&gt;&lt;div&gt;+displayInventory() : void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="180" y="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
