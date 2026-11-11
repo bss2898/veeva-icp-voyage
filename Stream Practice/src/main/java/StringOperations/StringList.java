@@ -1,6 +1,11 @@
 package StringOperations;
+import javax.swing.text.html.Option;
+import java.sql.SQLOutput;
 import java.util.*;
 import java.util.stream.Collector;
+import java.util.stream.Collectors;
+import java.util.Map;
+import java.util.HashMap;
 public class StringList {
     public static void  main  (String args[]){
         List<List<String>> lis=new ArrayList<>();
@@ -8,6 +13,102 @@ public class StringList {
                 Arrays.asList("C","JAVA","python","JS","C"),
                 Arrays.asList("Oracle","NoSql","SQLite"),
                 Arrays.asList("ChatGPT","Groq","GEMINI","CLAUDE","Groq"));
+
+
+//        Map<String,Long> wordCount=lis.stream()
+//                .flatMap(List::stream)
+//                .collect(
+//                Collectors.groupingBy(
+//                        str->str,
+//                        HashMap::new,
+//                        Collectors.counting()
+//                )
+//        );
+//        System.out.println(wordCount);
+
+        //Longest word from given list
+
+        Optional<String> longest=lis.stream()
+                .flatMap(List::stream)
+                .collect(Collectors.toMap(
+                        str->str,
+                        String::length,
+                        (prev,curr)->curr
+                )).
+                entrySet().stream()
+                //.map(Integer::intValue)
+                .max(Comparator.comparingInt(Map.Entry::getValue))
+                .stream()
+                .map(Map.Entry::getKey)
+                .findFirst();
+        System.out.println(longest);
+
+        Optional<String> longest1 = lis.stream()
+                .flatMap(List::stream)
+                .collect(Collectors.toMap(
+                        str -> str,
+                        String::length,
+                        (prev, curr) -> curr
+                ))
+                .entrySet().stream()
+                .max(Map.Entry.comparingByValue())
+                .map(Map.Entry::getKey); // Calls Optional.map() directly!
+
+        //Finding first repeating string
+//        Optional<String> ans=lis.stream()
+//                .flatMap(List::stream)
+//                .collect(Collectors.groupingBy(
+//                        //classifier
+//                        str->str,
+//                        LinkedHashMap::new,
+//                        Collectors.counting()
+//                ))
+//                .entrySet().stream()
+//                .filter(entry->entry.getValue()>1)
+//                .map(Map.Entry::getKey)
+//                .findFirst();
+//        System.out.println(ans.get());
+//        //string with more than one repetions
+//        List<String> ans1=lis.stream()
+//                .flatMap(List::stream)
+//                .collect(Collectors.groupingBy(
+//                        //classifier
+//                        str->str,
+//                        LinkedHashMap::new,
+//                        Collectors.counting()
+//                ))
+//                .entrySet().stream()
+//                .filter(entry->entry.getValue()>1)
+//                .map(Map.Entry::getKey)
+//                .toList();
+//        System.out.println(ans1);
+        //finding repeating characters in a given string
+        //String strex="aabbbbcdeef";
+        // Finding repeating characters
+//        List<Character> repeatingChars = strex.chars()
+//                .mapToObj(c -> (char) c) // Box int code points to Character
+//                .collect(Collectors.groupingBy(
+//                        c -> c,
+//                        LinkedHashMap::new,  // Preserves encounter order ('a', 'b', 'e')
+//                        Collectors.counting()
+//                ))
+//                .entrySet().stream()
+//                .filter(entry -> entry.getValue() > 1) // Keep only characters appearing more than once
+//                .map(Map.Entry::getKey)
+//                .toList();
+//        System.out.println(repeatingChars);
+
+    //mappping each string to string value of length
+//        Map<String, Integer> stringValues = lis.stream()
+//                .flatMap(List::stream)
+//                .collect(Collectors.toMap(
+//                        str -> str,
+//                        String::length,
+//                        (prev,curr)->curr
+//                ));
+        //System.out.println(stringValues);
+
+
 
 //      lis.stream()
 //             .flatMap(List::stream)

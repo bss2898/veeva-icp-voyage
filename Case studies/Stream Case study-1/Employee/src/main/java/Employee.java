@@ -34,6 +34,15 @@ public class Employee {
     public void setDepartment(Departments department) {
         this.department = department;
     }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "EmpName='" + EmpName + '\'' +
+                ", age=" + age +
+                ", department=" + department +
+                '}';
+    }
 }
 
 
