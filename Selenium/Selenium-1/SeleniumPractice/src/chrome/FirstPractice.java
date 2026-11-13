@@ -37,9 +37,20 @@ public class FirstPractice {
 		String title=driver.getTitle();
 		System.out.println(title);
 		
-		
-		Thread.sleep(1500);
-		driver.close();
+		boolean logoDisplayed1=driver.findElement(By.id("name")).isDisplayed();
+		boolean logoDisplayed2=driver.findElement(By.cssSelector("textarea[id='textarea']")).isDisplayed();
+		System.out.println(logoDisplayed1);
+		System.out.println(logoDisplayed2);
+//		boolean logoDisplayed3=driver.findElement(By.cssSelector("textarea[id='textarearandom']")).isDisplayed();		
+//		System.out.println(logoDisplayed3);
+		Thread.sleep(1100);
+		driver.findElement(By.linkText("Udemy Courses")).click();
+		System.out.println("Navigating back to home after opening udemy courses");
+		driver.findElement(By.linkText("Courses")).click();
+		System.out.println("Back to home");
+		System.out.println("End");
+		//Thread.sleep(1500);
+		//driver.close();
 	}
 
 }
