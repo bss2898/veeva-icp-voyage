@@ -69,8 +69,8 @@ public class Session1LocatorsDemo {
             
 		}
 		finally  {
-			Thread.sleep(3000);
-            driver.close();
+			//Thread.sleep(3000);
+            //driver.close();
         }
 	}
 

@@ -1,0 +1,1 @@
+INDEX VERSION 1.134+C:\Users\bss\Desktop\Veeva IC\Selenium\Selenium-1\SeleniumPractice\src\chrome\.metadata\.plugins\org.eclipse.jdt.core
