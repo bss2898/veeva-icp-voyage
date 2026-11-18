@@ -19,8 +19,8 @@ public class FirstPractice {
 		
 		//Logging into my college survey page
 		driver.get("https://tinyurl.com/494x6rh6");
-		driver.findElement(By.xpath("//input[1]")).sendKeys("23A81A05J5");
-		driver.findElement(By.cssSelector("input[type='password']")).sendKeys("23A81A05J5");
+		driver.findElement(By.xpath("//input[1]")).sendKeys("23A81A05E9");
+		driver.findElement(By.cssSelector("input[type='password']")).sendKeys("23A81A05E9");
 		Thread.sleep(1500);
 		driver.findElement(By.cssSelector("button[type='submit']")).click();
 		
