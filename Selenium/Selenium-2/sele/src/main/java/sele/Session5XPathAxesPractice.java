@@ -34,15 +34,16 @@ public class Session5XPathAxesPractice {
             System.out.println("[PASS] ancestor + descendant Link Href: "+jdoeDeleteLink.getDomAttribute("href"));
 
             //child + last(): Navigate from table1 tbody to child tr[last()], then child td[3] (Email of last row): //table[@id='table1']/tbody/child::tr[last()]/child::td[3]
-            WebElement lastRowEmail=driver.findElement(By.xpath(""));
+            //email of the last 
+            WebElement lastRowEmail=driver.findElement(By.xpath("//table[@id='table1']/tbody/child::tr[last()]/child::td[3]"));
             System.out.println("[PASS] child + last() Email: "+lastRowEmail.getText());
 
             //following: Start at table1 header 'Last Name' and grab the very first following td cell ('Smith'): //table[@id='table1']//span[text()='Last Name']/following::td[1]
-            WebElement firstFollowingCell=driver.findElement(By.xpath(""));
+            WebElement firstFollowingCell=driver.findElement(By.xpath("//table[@id='table1']//span[text()='Last Name']/following::td[1]"));
             System.out.println("[PASS] following::td[1] Text: "+firstFollowingCell.getText());
 
             //preceding: Start at table2 header and locate the preceding table1's h4 heading ('Example 1'): //table[@id='table2']/preceding::h4[1]
-            WebElement precedingHeading=driver.findElement(By.xpath(""));
+            WebElement precedingHeading=driver.findElement(By.xpath("//table[@id='table2']/preceding::h4[2]"));
             System.out.println("[PASS] preceding::h4[1] Text: "+precedingHeading.getText());
 
         } finally {
