@@ -1,0 +1,21 @@
+1.	Create a digital library catalog that prevents duplicate entries and analyzes book borrowing metrics.
+Define an interface Searchable with a method boolean matchesKeyword(String keyword).
+Create a Book class implementing Searchable with isbn (String), title (String), author (String), and borrowCount (int).
+Two books are considered identical if they have the same isbn.
+matchesKeyword(String keyword) returns true if title or author contains the keyword (case-insensitive).
+Create a LibraryCatalog class storing books in a Set<Book> with methods using Streams:
+List<Book> searchBooks(String keyword): Returns all books matching the keyword, sorted by borrowCount in descending order.
+Optional<Book> getMostBorrowedBook(): Returns the book with the highest borrowCount.
+Constraints
+0 ≤ borrowCount ≤ 10⁶
+ISBN strings are non-empty and unique per distinct edition.
+Sample Input & Output
+Input:
+Add Book("978-0134685991", "Effective Java", "Joshua Bloch", 150)
+Add Book("978-0134685991", "Effective Java 3rd Ed", "Joshua Bloch", 200) (Ignored as duplicate ISBN)
+Add Book("978-0596009205", "Head First Java", "Kathy Sierra", 320)
+Call searchBooks("java")
+Output:
+Search Results: [Head First Java (320), Effective Java (150)]
+Most Borrowed: Head First Java
+
